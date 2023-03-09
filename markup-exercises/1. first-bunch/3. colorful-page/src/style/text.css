@@ -1,0 +1,73 @@
+
+
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: rgb(240, 241, 244)
+
+}
+
+
+p {
+
+    margin: 0;
+
+}
+
+
+ul {
+
+    list-style-type: none;
+
+}
+
+
+#top-header {
+
+    margin-bottom: 6px;
+}
+
+
+#top-paragraph {
+
+    margin-top: 6px;
+}
+
+
+
+
+.blue-label {
+
+    font-size: 20px;
+
+    color: blue;
+
+}
+
+
+.difficulty-level-label {
+
+    margin-top: 6px;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    text-transform: lowercase;
+
+}
+
+
+.description-label {
+
+    color: dimgrey;
+
+    font-size: 14px;
+
+    margin-top: 20px;
+
+}
+
+
+
