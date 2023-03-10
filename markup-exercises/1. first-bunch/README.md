@@ -7,9 +7,6 @@ It specifies my tasks for the first week.
 These are some of the latests results.
 
 <br />
-
-## First bunch of exercises
-
 <br />
   
   _The First one_  
