@@ -1,17 +1,24 @@
 
 
 
+.flex-container {
+
+    display: flex;
+
+}
+
+
 .main-content {
 
     margin-left: 400px;
-    margin-top: 100px;
+    margin-top: 60px;
 
 }
 
 
 .element-list {
 
-    margin-top: 50px;
+    margin-top: 30px;
 
     padding-inline-start: 0;
 
@@ -20,13 +27,24 @@
 }
 
 
+.element, .margin-top-30px {
+
+    padding-top: 30px;
+
+}
+
+
 .element {
 
-    width: 800px;
+    width: 700px;
 
     background-color: white;
 
-    padding: 20px;
+    margin-bottom: 30px;
+
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-bottom: 26px;
 
 }
 
@@ -34,9 +52,16 @@
 .border-right-green {
 
     border-right: solid;
-
     border-right-width: 4px;
+    border-right-color: rgb(140, 190, 149);
 
-    border-right-color: lawngreen;
+}
+
+
+.bottom-span {
+
+    margin-right: 6px;
+
+    background-color: rgb(132, 147, 186);
 
 }
