@@ -1,0 +1,56 @@
+
+
+
+ul {
+
+    list-style-type: none;
+
+}
+
+
+
+p {
+
+    margin: 0px;
+
+}
+
+
+
+.font-arial {
+
+    font-family: Arial, sans-serif;
+
+}
+
+
+
+.header {
+
+    font-size: 20px;
+
+}
+
+
+
+.link-root {
+
+    font-weight: bold;
+
+}
+
+
+
+.link-path, .link-root {
+
+    font-size: 15px;
+
+}
+
+
+
+.main-text, .footer {
+
+    font-size: 13px;
+
+}

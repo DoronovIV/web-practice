@@ -1,0 +1,49 @@
+
+
+
+.flex-container {
+
+    display: flex;
+
+}
+
+
+
+.element-list {
+
+    margin-left: 50px;
+    margin-top: 20px;
+
+}
+
+
+
+.element {
+
+    width: 900px;
+
+    margin-top: 6px;
+
+    padding-left: 14px;
+    padding-top: 10px;
+    padding-right: 14px;
+    padding-bottom: 10px;
+
+    border-radius: 10px;
+    border-width: 1px;
+
+}
+
+
+.horizontal-element {
+
+    margin-right: 4px;
+
+}
+
+
+.link-text-container {
+
+    margin-bottom: 3px;
+
+}
