@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,500,600,700');
 
 
 ul {
@@ -19,7 +19,8 @@ p {
 
 .font-arial {
 
-    font-family: Arial, sans-serif;
+    font-family: Open Sans, sans-serif;
+    src: local('')
 
 }
 
@@ -52,5 +53,7 @@ p {
 .main-text, .footer {
 
     font-size: 13px;
+    font-variant: normal;
+    font-weight: 400;
 
 }
