@@ -29,6 +29,7 @@ p {
 .header {
 
     font-size: 20px;
+    font-weight: 500;
 
 }
 
@@ -55,5 +56,15 @@ p {
     font-size: 13px;
     font-variant: normal;
     font-weight: 400;
+
+}
+
+
+
+.search-filter {
+
+    margin-left: 4px;
+
+    font-weight: 500;
 
 }
