@@ -13,7 +13,7 @@ These are some of the latests results.
 
 <br />
 
-### First bunch of exercises
+### First set of exercises
 
 <br />
   
