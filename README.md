@@ -3,12 +3,17 @@ This place is created to contain exercises I work on.
 
 <br />
 
-## Preview
+## Previous preview
+_the name of the previous featured section_
+
+<br />
+
+## Current preview
 These are some of the latests results.
 
 <br />
 
-## First bunch of exercises
+### First set of exercises
 
 <br />
   
