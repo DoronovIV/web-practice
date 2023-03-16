@@ -3,13 +3,13 @@ This place is created to contain exercises I work on.
 
 <br />
 
-## Preview
-These are some of the latests results.
+## Previous preview
+_the name of the previous featured section_
 
 <br />
 
-## Previous preview
-_the name of the previous featured section_
+## Current preview
+These are some of the latests results.
 
 <br />
 
