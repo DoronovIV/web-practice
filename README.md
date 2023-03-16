@@ -8,6 +8,11 @@ These are some of the latests results.
 
 <br />
 
+## Previous preview
+_the name of the previous featured section_
+
+<br />
+
 ## First bunch of exercises
 
 <br />
