@@ -41,3 +41,6 @@ Also, 'flex-wrap' regulates the wrapping of the elements to manage line width fo
 'flex-grow' will be determining the item flex width, also in relation with the main axis.
 
 	. Of Axis, their alignment and leveling
+
+Still do not know wheter they ment x/y axis or the table rows and cols axis, I think I will do both.
+So the flex-container axis are presented by x and y space axis and the 'flex-direction' value. For the main one, 'justify-content' property is used. The secondary one is affected by the 'align-content' one (do not confuse it with 'align-items').
