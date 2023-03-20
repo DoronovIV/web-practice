@@ -1,0 +1,50 @@
+
+
+
+.gm-flex-container, .gm-label-input-pair, .gm-bottom-control-zone {
+    display: flex;
+}
+
+
+.gm-label-input-pair{
+     flex-flow: column;
+
+     margin-bottom: 24px;
+}
+
+
+.gm-main-content {
+    margin: 20px;
+}
+
+
+.gm-form-one {
+    width: 500px;
+    height: auto;
+
+    padding: 40px;
+}
+
+
+.gm-input {
+    width: 100%;
+    height: 52px;
+
+    padding: 20px;
+
+    border:none;
+}
+
+
+.gm-bottom-control-zone {
+    flex-flow: row;
+    justify-content:space-around;
+
+    margin-top: 40px;
+}
+
+
+.gm-borderless-shape {
+    border: none;
+    border-radius: 10px;
+}

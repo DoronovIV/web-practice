@@ -1,0 +1,36 @@
+
+
+
+.clr-bg-white {
+    background-color: white;
+}
+
+
+.clr-bg-dim {
+    background-color: rgb( 245, 245, 245);
+}
+
+
+.clr-bg-transparent {
+    background-color: transparent;
+}
+
+
+.clr-fg-grey {
+    color: grey;
+}
+
+
+.clr-form-shadow {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+
+.clr-input-shadow {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+
+.clr-input-text-color {
+    color: lightgrey;
+}
