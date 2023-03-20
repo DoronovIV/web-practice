@@ -13,32 +13,98 @@
 
   <body class="clr-bg-dim">
     <div class="gm-main-content txt-main-font">
-      <form class="gm-form-one clr-bg-white clr-form-shadow gen-br-10px">
+      <div class="gm-flex-container gen-position-rel">
+        <form class="gm-form-one clr-bg-white clr-top-form-shadow gen-br-10px">
           <div class="gm-label-input-pair">
-            <label class="gen-margin-left-6px gen-margin-bottom-4px txt-label-font-size">ФИО*</label>
-            <input class="gm-input clr-input-shadow txt-main-font txt-input-font-size gen-br-10px" placeholder="Иванов Иван Иванович">
+            <label
+              class="gen-margin-left-6px gen-margin-bottom-4px txt-label-font-size"
+              >ФИО*</label
+            >
+            <input
+              class="gm-input clr-input-shadow txt-main-font txt-input-font-size gen-br-10px"
+              placeholder="Иванов Иван Иванович"
+            />
           </div>
 
           <div class="gm-label-input-pair">
-            <label class="gen-margin-left-6px gen-margin-bottom-4px txt-label-font-size">Номер телефона*</label>
-            <input class="gm-input clr-input-shadow txt-main-font txt-input-font-size gen-br-10px" placeholder="+7 (495) 453 33 41">
+            <label
+              class="gen-margin-left-6px gen-margin-bottom-4px txt-label-font-size"
+              >Номер телефона*</label
+            >
+            <input
+              class="gm-input clr-input-shadow txt-main-font txt-input-font-size gen-br-10px"
+              placeholder="+7 (495) 453 33 41"
+            />
           </div>
 
           <div class="gm-label-input-pair">
-            <label class="gen-margin-left-6px gen-margin-bottom-4px txt-label-font-size">Email*</label>
-            <input class="gm-input clr-input-shadow txt-main-font txt-input-font-size gen-br-10px" placeholder="delolive@mail.ru">
+            <label
+              class="gen-margin-left-6px gen-margin-bottom-4px txt-label-font-size"
+              >Email*</label
+            >
+            <input
+              class="gm-input clr-input-shadow txt-main-font txt-input-font-size gen-br-10px"
+              placeholder="delolive@mail.ru"
+            />
           </div>
 
           <div class="gm-label-input-pair">
-            <label class="gen-margin-left-6px gen-margin-bottom-4px txt-label-font-size">Регион*</label>
-            <input class="gm-input clr-input-shadow txt-main-font txt-input-font-size gen-br-10px" placeholder="Санкт-Петербург">
+            <label
+              class="gen-margin-left-6px gen-margin-bottom-4px txt-label-font-size"
+              >Регион*</label
+            >
+            <input
+              class="gm-input clr-input-shadow txt-main-font txt-input-font-size gen-br-10px"
+              placeholder="Санкт-Петербург"
+            />
           </div>
 
           <div class="gm-bottom-control-zone">
-            <button type="reset" class="txt-uppercase gm-borderless-shape clr-bg-transparent txt-main-font txt-control-font-size clr-fg-grey">очистить</button>
-            <button type="button" class="txt-uppercase txt-control-font-size">далее</button>
+            <button
+              type="reset"
+              class="txt-uppercase gm-borderless-shape clr-bg-transparent txt-main-font txt-control-font-size clr-fg-grey gen-cursor-pointer"
+            >
+              очистить
+            </button>
+            <button
+              type="button"
+              class="txt-uppercase gm-solid-border-shape clr-bg-transparent clr-border-green txt-control-font-size clr-fg-grey gen-cursor-pointer"
+            >
+              далее
+            </button>
           </div>
-      </form>
+        </form>
+        <form class="gm-form-two clr-bg-white clr-form-shadow gen-br-10px">
+          <div class="gm-flex-container">
+            <span class="gm-label-input-pair">
+              <label
+                class="gen-margin-left-6px gen-margin-bottom-4px txt-label-font-size"
+                >Наименование страхового продукта</label
+              >
+              <select
+                aria-label="protectionSelect"
+                class="clr-bg-white gm-select clr-input-shadow txt-main-font txt-input-font-size gen-br-10px"
+              >
+                <option>Защита+</option>
+                <option>Защита-</option>
+                <option>Защита=</option>
+                <option>Защита++</option>
+              </select>
+            </span>
+
+            <span class="gm-label-input-pair">
+              <label
+                class="gen-margin-left-6px gen-margin-bottom-4px txt-label-font-size"
+                >Номер полиса</label
+              >
+              <input
+                class="gm-input clr-input-shadow txt-main-font txt-input-font-size gen-br-10px"
+                placeholder="123456789"
+              />
+            </span>
+          </div>
+        </form>
+      </div>
     </div>
   </body>
 </html>

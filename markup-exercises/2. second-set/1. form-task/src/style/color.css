@@ -16,8 +16,18 @@
 }
 
 
+.clr-border-green {
+    border-color: rgb(100, 200, 100);
+}
+
+
 .clr-fg-grey {
-    color: grey;
+    color: dimgrey;
+}
+
+
+.clr-top-form-shadow {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 10px 0px;
 }
 
 

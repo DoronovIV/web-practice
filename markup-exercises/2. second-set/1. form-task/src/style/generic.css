@@ -14,3 +14,18 @@
 .gen-br-10px {
     border-radius: 10px;
 }
+
+
+.gen-cursor-pointer {
+    cursor: pointer;
+}
+
+
+.gen-position-abs {
+    position: absolute;
+}
+
+
+.gen-position-rel {
+    position: relative;
+}
