@@ -1,0 +1,15 @@
+.css-static {
+	position: static;	
+}
+
+.css-relative {
+	position: relative;
+}
+
+.css-absolute {
+	position: absolute;
+}
+
+.css-sticky {
+	position: sticky;
+}

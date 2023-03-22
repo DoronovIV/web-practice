@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,500,600,700,800,900,1000');
+
+.form-button {
+    border-radius: 6px;
+    border: solid;
+    border-width: 2px;
+
+    border-color: rgb(100, 200, 100);
+    color: dimgrey;
+    background-color: transparent;
+    
+    padding: 16px 60px 16px 60px;
+
+    cursor: pointer;
+
+    text-transform: uppercase;
+    font-family: Open Sans;
+    font-size: 16px;
+}
