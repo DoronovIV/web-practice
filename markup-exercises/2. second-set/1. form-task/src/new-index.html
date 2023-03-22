@@ -1,0 +1,156 @@
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+
+    <!-- <my custom library> -->
+
+    <!-- this-task-form -->
+
+    <!-- buttons -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style-library/form/white-rounded/button/form-button.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style-library/form/white-rounded/button/borderless-form-button.css"
+    />
+
+    <!-- divisions -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style-library/form/white-rounded/division/form-content-container.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style-library/form/white-rounded/division/form-label-input-container.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style-library/form/white-rounded/division/form-left-section.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style-library/form/white-rounded/division/form-right-section.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style-library/form/white-rounded/division/form-control-container.css"
+    />
+
+    <!-- input -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style-library/form/white-rounded/input/form-input.css"
+    />
+
+    <!-- label -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style-library/form/white-rounded/label/form-label.css"
+    />
+
+    <!-- select -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style-library/form/white-rounded/select/form-select.css"
+    />
+
+    <!-- generic-styles-from-custom-library -->
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style-library/general/appearance/color/specific/background-color.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style-library/general/positioning/flex-positioning/container.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style-library/general/positioning/css-positioning/positioning.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style-library/general/positioning/flex-positioning/justification.css"
+    />
+
+    <!-- </my custom library> -->
+
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="background-color-rgb-245">
+    <div class="form-content-container">
+      <div class="horizontal-flex-container css-relative">
+        <form class="form-left-section">
+          <div class="form-label-input-container">
+            <label class="form-label">ФИО*</label>
+            <input class="form-input" placeholder="Иванов Иван Иванович" />
+          </div>
+
+          <div class="form-label-input-container">
+            <label class="form-label">Номер телефона*</label>
+            <input class="form-input" placeholder="+7 (495) 453 33 41" />
+          </div>
+
+          <div class="form-label-input-container">
+            <label class="form-label">Email*</label>
+            <input class="form-input" placeholder="delolive@mail.ru" />
+          </div>
+
+          <div class="form-label-input-container">
+            <label class="form-label">Регион*</label>
+            <input class="form-input" placeholder="Санкт-Петербург" />
+          </div>
+
+          <div class="form-control-container">
+            <button type="reset" class="form-button borderless-form-button">
+              очистить
+            </button>
+            <button type="button" class="form-button">далее</button>
+          </div>
+        </form>
+        <form class="form-right-section">
+          <div class="horizontal-flex-container justify-evenly">
+            <span class="form-label-input-container">
+              <label class="form-label">Наименование страхового продукта</label>
+              <select aria-label="protectionSelect" class="form-select">
+                <option>Защита+</option>
+                <option>Защита-</option>
+                <option>Защита=</option>
+                <option>Защита++</option>
+              </select>
+            </span>
+
+            <span class="form-label-input-container">
+              <label class="form-label">Номер полиса</label>
+              <input class="form-input" placeholder="123456789" />
+            </span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

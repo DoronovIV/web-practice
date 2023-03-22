@@ -1,18 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,500,600,700,800,900,1000');
 
 
-.form-input {
+.form-select {
     width: 400px;
     height: 52px;
 
-    padding: 20px;
-
     border: none;
+    border-radius: 10px;
     outline: none;
+
+    padding-left: 20px;
+    
+    align-items: center;
+
+    cursor: pointer;
 
     font-family: Open Sans;
     font-size: 15px;
 
-    color: lightgrey;
+    background-color: transparent;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }

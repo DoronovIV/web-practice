@@ -4,12 +4,12 @@ It stands for Object Oriented CSS. I have chosen this pattern to structure my st
 ## Structure
 The current structure consists of:
 
-- Table
-- Form
-- Element
- - Button
- - Input
- - Label
-- General
- - Font
- - Positioning
+- table
+- form
+- element
+ - button
+ - input
+ - label
+- general
+ - font
+ - positioning
