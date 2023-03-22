@@ -12,10 +12,17 @@
       type="text/css"
       href="style-library/form/white-rounded/button/form-button.css"
     />
+
     <link
       rel="stylesheet"
       type="text/css"
-      href="style-library/form/white-rounded/button/borderless-form-button.css"
+      href="style-library/form/white-rounded/button/form-borderless-button.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style-library/form/white-rounded/button/form-uppercase-button.css"
     />
 
     <!-- divisions -->
@@ -99,10 +106,22 @@
     />
 
     <link
-    rel="stylesheet"
-    type="text/css"
-    href="style-library/general/boxing/margin/margin-left.css"
-  />
+      rel="stylesheet"
+      type="text/css"
+      href="style-library/general/positioning/flex-positioning/alignment.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style-library/general/positioning/flex-positioning/wrap.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style-library/general/boxing/margin/margin-left.css"
+    />
 
     <!-- </my custom library> -->
 
@@ -138,31 +157,57 @@
           </div>
 
           <div class="form-control-container">
-            <button type="reset" class="form-button borderless-form-button">
+            <button
+              type="reset"
+              class="form-button form-uppercase-button form-borderless-button"
+            >
               очистить
             </button>
-            <button type="button" class="form-button">далее</button>
+            <button type="button" class="form-button form-uppercase-button">
+              далее
+            </button>
           </div>
         </form>
         <form class="form-right-section">
-          <div class="horizontal-flex-container justify-between margin-left-6px">
-            <span class="form-label-input-container">
-              <label class="form-label">Наименование страхового продукта</label>
-              <select aria-label="protectionSelect" class="form-select">
-                <option>Защита+</option>
-                <option>Защита-</option>
-                <option>Защита=</option>
-                <option>Защита++</option>
-              </select>
-            </span>
+          <div class="vertical-flex-container">
+            <div
+              class="horizontal-flex-container justify-between margin-left-6px flex-wrap"
+            >
+              <span class="form-label-input-container">
+                <label class="form-label"
+                  >Наименование страхового продукта</label
+                >
+                <select aria-label="protectionSelect" class="form-select">
+                  <option>Защита+</option>
+                  <option>Защита-</option>
+                  <option>Защита=</option>
+                  <option>Защита++</option>
+                </select>
+              </span>
 
-            <span class="form-label-input-container">
-              <label class="form-label">Номер полиса</label>
-              <input
-                class="form-input form-short-input"
-                placeholder="123456789"
-              />
-            </span>
+              <span class="form-label-input-container">
+                <label class="form-label">Номер полиса</label>
+                <input
+                  class="form-input form-short-input"
+                  placeholder="123456789"
+                />
+              </span>
+            </div>
+            <div class="horizontal-flex-container justify-between flex-align-end">
+              <span>
+                <div class="vertical-flex-container">
+                  <img alt="img" />
+                  <button type="submit" class="form-button">
+                    Выберите файл
+                  </button>
+                </div>
+              </span>
+              <span>
+                <textarea aria-label="textareaLabel">
+
+                </textarea>
+              </span>
+            </div>
           </div>
         </form>
       </div>

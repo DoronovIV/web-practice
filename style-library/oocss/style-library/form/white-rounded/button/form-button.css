@@ -5,7 +5,7 @@
     border: solid;
     border-width: 2px;
 
-    border-color: rgb(100, 200, 100);
+    border-color: rgb(120, 120, 200);
     color: dimgrey;
     background-color: transparent;
     
@@ -13,7 +13,6 @@
 
     cursor: pointer;
 
-    text-transform: uppercase;
     font-family: Open Sans;
     font-size: 16px;
 }
