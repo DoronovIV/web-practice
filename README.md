@@ -1,5 +1,7 @@
 # Welcome to web-practice
 This place is created to contain exercises I work on.  
+<br />
+Also: **This directory is the root one for the Jouster targeting path**.
 
 <br />
 
