@@ -53,10 +53,10 @@
     />
 
     <link
-    rel="stylesheet"
-    type="text/css"
-    href="style-library/form/white-rounded/input/form-short-input.css"
-  />
+      rel="stylesheet"
+      type="text/css"
+      href="style-library/form/white-rounded/input/form-short-input.css"
+    />
 
     <!-- label -->
     <link
@@ -97,6 +97,12 @@
       type="text/css"
       href="style-library/general/positioning/flex-positioning/justification.css"
     />
+
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="style-library/general/boxing/margin/margin-left.css"
+  />
 
     <!-- </my custom library> -->
 
@@ -139,7 +145,7 @@
           </div>
         </form>
         <form class="form-right-section">
-          <div class="horizontal-flex-container justify-evenly">
+          <div class="horizontal-flex-container justify-between margin-left-6px">
             <span class="form-label-input-container">
               <label class="form-label">Наименование страхового продукта</label>
               <select aria-label="protectionSelect" class="form-select">
@@ -152,7 +158,10 @@
 
             <span class="form-label-input-container">
               <label class="form-label">Номер полиса</label>
-              <input class="form-input form-short-input" placeholder="123456789" />
+              <input
+                class="form-input form-short-input"
+                placeholder="123456789"
+              />
             </span>
           </div>
         </form>
