@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,500,600,700,800,900,1000');
+
+
+.modal-white-window {
+    width: auto;
+
+    margin:auto;
+    margin-top: 200px;
+
+    padding: 40px;
+
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 16px;
+
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+}
