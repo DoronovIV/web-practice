@@ -84,6 +84,12 @@
       href="style-library/form/white-rounded/label/form-lesser-label.css"
     />
 
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style-library/form/white-rounded/label/form-transparent-label.css"
+    />
+
     <!-- select -->
     <link
       rel="stylesheet"
@@ -161,6 +167,18 @@
       href="style-library/general/appearance/color/default/color.css"
     />
 
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style-library/general/appearance/color/specific/color.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style-library/general/text/font-weight/open-sans.css"
+    />
+
     <!-- </my custom library> -->
 
     <!-- fonts -->
@@ -197,11 +215,11 @@
           <div class="form-control-container">
             <button
               type="reset"
-              class="form-button form-uppercase-button form-borderless-button"
+              class="form-button form-uppercase-button form-borderless-button font-weight-500"
             >
               очистить
             </button>
-            <button type="button" class="form-button form-uppercase-button">
+            <button type="button" class="form-button form-uppercase-button font-weight-500">
               далее
             </button>
           </div>
@@ -231,84 +249,89 @@
             </span>
           </div>
           <div class="vertical-flex-container">
-          <div class="vertical-flex-container">
-            <div class="horizontal-flex-container justify-end">
-              <span>
-                <textarea
-                  aria-label="textareaLabel"
-                  rows="3"
-                  cols="30"
-                  class="form-text-area"
-                >
-                </textarea>
-              </span>
+            <div class="vertical-flex-container gap-10px">
+              <div class="horizontal-flex-container justify-end">
+                <span>
+                  <textarea
+                    aria-label="textareaLabel"
+                    rows="3"
+                    cols="30"
+                    class="form-text-area"
+                  >
+                  </textarea>
+                </span>
+              </div>
+              <div
+                class="horizontal-flex-container justify-between flex-align-end"
+              >
+                <span>
+                  <div class="vertical-flex-container">
+                    <div>
+                      <button type="submit" class="form-button font-weight-400">
+                        Выберите файл
+                      </button>
+                    </div>
+                  </div>
+                </span>
+                <span>
+                  <div class="horizontal-flex-container flex-align-center">
+                    <span>
+                      <input
+                        class="form-checkbox"
+                        type="checkbox"
+                        name="acceptTermsCheckbox"
+                      />
+                    </span>
+                    <span>
+                      <label
+                        for="acceptTermsCheckbox"
+                        class="form-label form-lesser-label font-weight-500 form-label-color-blue"
+                        >Я принимаю</label
+                      >
+                    </span>
+                    <span>
+                      <a class="form-label form-lesser-label form-grey-link"
+                        >условия передачи информации</a
+                      >
+                    </span>
+                  </div>
+                </span>
+              </div>
             </div>
             <div
-              class="horizontal-flex-container justify-between flex-align-end"
+              class="horizontal-flex-container flex-align-end justify-between"
             >
               <span>
-                <div class="vertical-flex-container">
-                  <div>
-                    <img alt="img" />
-                  </div>
-                  <div>
-                    <button type="submit" class="form-button">
-                      Выберите файл
-                    </button>
-                  </div>
+                <div class="vertical-flex-container justify-between gap-10px">
+                  <label
+                    class="form-label form-lesser-label form-transparent-label margin-bottom-6px"
+                  >
+                    Файл не выбран</label
+                  >
+
+                  <label
+                    class="form-label form-lesser-label form-transparent-label argin-top-6px"
+                    >JPG, GIF или PNG. Максимальный размер 1 мб.</label
+                  >
                 </div>
               </span>
               <span>
-                <div class="horizontal-flex-container flex-align-center">
-                  <span>
-                    <input
-                      class="form-checkbox"
-                      type="checkbox"
-                      name="acceptTermsCheckbox"
-                    />
-                  </span>
-                  <span>
-                    <label
-                      for="acceptTermsCheckbox"
-                      class="form-label form-lesser-label"
-                      >Я принимаю</label
-                    >
-                  </span>
-                  <span>
-                    <a class="form-label form-lesser-label form-grey-link"
-                      >условия передачи информации</a
-                    >
-                  </span>
+                <div class="form-control-container">
+                  <button
+                    type="reset"
+                    class="form-button form-uppercase-button form-borderless-button font-weight-500"
+                  >
+                    очистить
+                  </button>
+                  <button
+                    type="button"
+                    class="form-button form-uppercase-button font-weight-500"
+                  >
+                    отправить
+                  </button>
                 </div>
               </span>
             </div>
-          </div>
-          <div class="horizontal-flex-container flex-align-end justify-between">
-            <span>
-              <div class="vertical-flex-container justify-between gap-10px">
-                <label class="form-label form-lesser-label color-grey margin-bottom-6px">
-                  Файл не выбран</label
-                >
-
-                <label class="form-label form-lesser-label color-grey argin-top-6px"
-                  >JPG, GIF или PNG. Максимальный размер 1 мб.</label
-                >
-              </div>
-            </span>
-            <span>
-              <div class="form-control-container">
-                <button
-                  type="reset"
-                  class="form-button form-uppercase-button form-borderless-button"
-                >
-                  очистить
-                </button>
-                <button type="button" class="form-button form-uppercase-button">
-                  отправить
-                </button>
-              </div>
-            </span>
-          </div>
           </div>
         </form>
       </div>
