@@ -6,7 +6,7 @@ Also: **This directory is the root one for the Jouster targeting path**.
 <br />
 
 ## Previous preview
-(https://github.com/DoronovIV/web-practice/tree/main/markup-exercises/1.%20first-set)[first set of exercises]
+[first set of exercises](https://github.com/DoronovIV/web-practice/tree/main/markup-exercises/1.%20first-set)
 
 <br />
 
@@ -19,7 +19,7 @@ These are some of the latests results.
 
 <br />
   
-  _Form (see (https://github.com/DoronovIV/web-practice/tree/main/markup-exercises/2.%20second-set/1.%20form-task)[readme])_  
+  _Form (see [readme](https://github.com/DoronovIV/web-practice/tree/main/markup-exercises/2.%20second-set/1.%20form-task))_  
   
 ![result-form](https://user-images.githubusercontent.com/93664113/227211386-c6246bd9-4001-43fe-a8e7-87ae7264b6b0.jpg)
 ---
