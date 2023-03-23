@@ -10,6 +10,14 @@
     color: dimgrey;
 }
 
+.color-gray {
+    color: gray;
+}
+
+.color-grey {
+    color: grey;
+}
+
 .color-lightgray {
     color: lightgray;
 }
