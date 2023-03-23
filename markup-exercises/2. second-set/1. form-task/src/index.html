@@ -65,6 +65,12 @@
       href="style-library/form/white-rounded/input/form-short-input.css"
     />
 
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style-library/form/white-rounded/input/form-checkbox.css"
+    />
+
     <!-- label -->
     <link
       rel="stylesheet"
@@ -77,6 +83,13 @@
       rel="stylesheet"
       type="text/css"
       href="style-library/form/white-rounded/select/form-select.css"
+    />
+
+    <!-- text-area -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style-library/form/white-rounded/text-area/form-text-area.css"
     />
 
     <!-- generic-styles-from-custom-library -->
@@ -168,44 +181,75 @@
             </button>
           </div>
         </form>
-        <form class="form-right-section">
-          <div class="vertical-flex-container">
-            <div
-              class="horizontal-flex-container justify-between margin-left-6px flex-wrap"
-            >
-              <span class="form-label-input-container">
-                <label class="form-label"
-                  >Наименование страхового продукта</label
-                >
-                <select aria-label="protectionSelect" class="form-select">
-                  <option>Защита+</option>
-                  <option>Защита-</option>
-                  <option>Защита=</option>
-                  <option>Защита++</option>
-                </select>
-              </span>
+        <form
+          class="form-right-section vertical-flex-container justify-between"
+        >
+          <div
+            class="horizontal-flex-container justify-between margin-left-6px flex-wrap"
+          >
+            <span class="form-label-input-container">
+              <label class="form-label">Наименование страхового продукта</label>
+              <select aria-label="protectionSelect" class="form-select">
+                <option>Защита+</option>
+                <option>Защита-</option>
+                <option>Защита=</option>
+                <option>Защита++</option>
+              </select>
+            </span>
 
-              <span class="form-label-input-container">
-                <label class="form-label">Номер полиса</label>
-                <input
-                  class="form-input form-short-input"
-                  placeholder="123456789"
-                />
+            <span class="form-label-input-container">
+              <label class="form-label">Номер полиса</label>
+              <input
+                class="form-input form-short-input"
+                placeholder="123456789"
+              />
+            </span>
+          </div>
+          <div class="vertical-flex-container">
+            <div class="horizontal-flex-container justify-end">
+              <span>
+                <textarea
+                  aria-label="textareaLabel"
+                  rows="3"
+                  cols="30"
+                  class="form-text-area"
+                >
+                </textarea>
               </span>
             </div>
-            <div class="horizontal-flex-container justify-between flex-align-end">
+            <div
+              class="horizontal-flex-container justify-between flex-align-end"
+            >
               <span>
-                <div class="vertical-flex-container">
-                  <img alt="img" />
-                  <button type="submit" class="form-button">
-                    Выберите файл
-                  </button>
+                <div class="vertical-flex-container justify-between">
+                  <div>
+                    <img alt="img" />
+                  </div>
+                  <div>
+                    <button type="submit" class="form-button">
+                      Выберите файл
+                    </button>
+                  </div>
                 </div>
               </span>
               <span>
-                <textarea aria-label="textareaLabel">
-
-                </textarea>
+                <div class="form-checkbox-area">
+                  <span>
+                    <input
+                      class="form-checkbox"
+                      type="checkbox"
+                      name="acceptTermsCheckbox"
+                    />
+                    <label for="acceptTermsCheckbox" class="form-label"
+                      >Я принимаю</label
+                    >
+                  </span>
+                  <span>
+                    <a class="form-grey-link"
+                      >условия пользовательского соглашения</a
+                    >
+                  </span>
+                </div>
               </span>
             </div>
           </div>
