@@ -8,32 +8,31 @@
 }
 
 
-.bg-blue {
-    background-color: rgb(244, 249, 254);
-}
-
-
 .picture-section {
     max-width: 1200px;
 }
 
 .header {
     margin: 40px;
-    margin-left: 150px;
+    margin-left: 240px;
 
     font-family: Open Sans;
     font-size: 40px;
 }
 
 
+
+/* utility */
+
 .font-open-sans {
     font-family: Open Sans;
 }
 
-
-.border-radius-14px {
-    border-radius: 14px;
+.bg-blue {
+    background-color: rgb(244, 249, 254);
 }
+
+
 
 
 

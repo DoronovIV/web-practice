@@ -5,11 +5,10 @@
     margin: auto;
     margin-bottom: 40px;
 
-    width: 1200px;
+    width: 1000px;
     overflow: auto;
     border-radius: 20px;
-  }
-
+}
 
 table {
     width: 100%;
@@ -21,6 +20,7 @@ table {
     background: transparent;
 
     font-family: Open Sans;
+    font-size: 16px;
     font-weight: 400;
 }
 
@@ -33,6 +33,15 @@ thead {
     color: white;
     background-color:rgb(43, 101, 140);
 }
+
+tbody tr:nth-child(even) {
+    background-color:white;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(244, 249, 254);
+} 
+
 
 
 .left-table-element, .center-table-element, .right-table-element {
@@ -47,8 +56,6 @@ thead {
     border-radius: 10px;
 }
 
-
-
 .left-table-element {
     text-align: left;
 }
@@ -60,10 +67,3 @@ thead {
 .right-table-element {
     text-align: right;
 }
-
-tbody tr:nth-child(even) {
-    background-color:white;
-}
-tbody tr:nth-child(odd) {
-    background-color: rgb(244, 249, 254);
-} 
