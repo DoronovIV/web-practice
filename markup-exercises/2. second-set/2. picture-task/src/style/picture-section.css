@@ -1,26 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,500,600,700,800,900,1000');
+
 
 .picture-section-container {
+    margin-left: 240px;
     margin-bottom: 14px;
 }
 
 
 .image-text {
-    font-size: 16px;
-
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-right: 10px;
+    width: 180px;
     z-index: 2;
-    width: 100px;
+
+    margin-left: 16px;
+    margin-top: 14px;
+    margin-right: 10px;
+
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .image-wrapper {
-    border-radius: 14px;
-
-    flex-wrap: nowrap;
-    height: 110px;
-
     width: auto;
+    height: 110px;
+    flex-wrap: nowrap;
+    border-radius: 14px;
 }
 
 .paragraph-image-container {
@@ -31,29 +34,27 @@
 }
 
 
+
 .pic-div {
-    position: relative;
-
-    margin-right: 14px;
-
-    border-radius: 14px;
-
-    height: 120px;
     width: 280px;
+    height: 120px;
+
+    padding-top: 2px;
+
+    position: relative;
+    margin-right: 14px;
+    border-radius: 14px;
 
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right bottom;
-
-    padding-top: 2px;
 }
-
 
 .bus-div, .wtf-div {
     background-size: 120px 104px;
 }
 
-.wtf-div {
+.wtf-div, .tools-div {
     width: 240px;
 }
 
@@ -67,5 +68,13 @@
 
 .wtf-div {
     background-image: url("../../resources/wtf.png");
+}
+
+.tools-div {
+    background-image: url("../../resources/tools.png");
+}
+
+.fruit-div {
+    background-image: url("../../resources/fruit.png");
 }
 
