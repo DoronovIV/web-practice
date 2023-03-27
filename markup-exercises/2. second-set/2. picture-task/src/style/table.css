@@ -1,11 +1,19 @@
+.table-wrapper {
+    width: 1200px;
+    overflow: auto;
+    border-radius: 20px;
+    border: 1px solid black;
+  }
+
+
 table {
     width: 100%;
     max-width: 1200px;
     
-    border-collapse: collapse;
     border-radius: 10px;
+    border-spacing: 0;
+
     background: transparent;
-    position: relative;
 }
 
 thead, tr, td {
@@ -26,6 +34,10 @@ thead {
     width: 320px;
 }
 
+.table-header {
+    border-radius: 10px;
+}
+
 
 
 .left-table-element {
@@ -40,9 +52,9 @@ thead {
     text-align: right;
 }
 
-tr:nth-child(even) {
+tbody tr:nth-child(even) {
     background-color:white;
 }
-tr:nth-child(odd) {
+tbody tr:nth-child(odd) {
     background-color: rgb(244, 249, 254);
 } 
