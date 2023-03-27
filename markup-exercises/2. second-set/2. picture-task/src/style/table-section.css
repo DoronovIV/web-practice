@@ -3,6 +3,7 @@
 
 .table-wrapper {
     margin: auto;
+    margin-bottom: 40px;
 
     width: 1200px;
     overflow: auto;

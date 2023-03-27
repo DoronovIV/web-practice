@@ -1,0 +1,55 @@
+.image {
+    border-radius: 14px;
+
+    height: 100%;
+    width: 100%;
+}
+
+
+.image-text {
+
+    position: absolute;
+    font-size: 16px;
+
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+    z-index: 2;
+    width: 100px;
+}
+
+.image-wrapper {
+    position: relative;
+    border-radius: 14px;
+
+    align-self: flex-end;
+
+    flex-wrap: nowrap;
+    height: 110px;
+
+    width: auto;
+
+    right: 0px;
+    bottom: 0px;
+}
+
+
+.small-paragraph-image-container, .large-paragraph-image-container {
+    display: flex;
+    justify-content: flex-end;
+
+    margin: 10px;
+    border-radius: 14px;
+    background-color: rgb(244, 249, 254);
+
+    height: 120px;
+}
+
+.large-paragraph-image-container {
+    width: 300px;
+}
+
+.small-paragraph-image-container {
+    width: 260px;
+
+}
