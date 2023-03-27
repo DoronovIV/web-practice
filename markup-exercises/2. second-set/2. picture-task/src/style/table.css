@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,500,600,700,800,900,1000');
+
+
 .table-wrapper {
+    margin: auto;
+
     width: 1200px;
     overflow: auto;
     border-radius: 20px;
-    border: 1px solid black;
   }
 
 
@@ -14,6 +18,9 @@ table {
     border-spacing: 0;
 
     background: transparent;
+
+    font-family: Open Sans;
+    font-weight: 400;
 }
 
 thead, tr, td {
@@ -29,8 +36,9 @@ thead {
 
 .left-table-element, .center-table-element, .right-table-element {
     padding-left: 20px;
-    padding-top: 20px;
+    padding-top: 16px;
     padding-right: 20px;
+    padding-bottom: 16px;
     width: 320px;
 }
 
