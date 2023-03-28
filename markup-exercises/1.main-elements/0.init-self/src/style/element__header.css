@@ -1,34 +1,24 @@
-.flex-container {
+.element__header--flex {
     display: flex;
 }
 
-
-.upper-content {
-    justify-content: left;
-}
-
-
-.icon {
+.element__header__icon {
     margin-bottom: 12px;
     margin-top: 16px;
     margin-right: 0px;
     margin-left: 0px;
 }
 
-
-.title, .path {
+.element__header__title, .element__header__path {
     margin-left: 10px;
     line-height: 6px;
-
 }
 
-
-.title {
+.element__header__title {
     font-size: 13px;
 }
 
-
-.path {
+.element__header__path {
     font-size: 11px;
     color:gray;
 }
