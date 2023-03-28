@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,500,600,700,800,900,1000');
+
+
+
+.table-section, .picture-section {
+    margin: 40px 40px 40px 40px;
+    padding: 0 160px 40px 160px;
+}
+
+
+.picture-section {
+    max-width: 1200px;
+}
+
+.header {
+    margin: 40px;
+    margin-left: 240px;
+
+    font-family: Open Sans;
+    font-size: 40px;
+}
+
+
+
+/* utility */
+
+.font-open-sans {
+    font-family: Open Sans;
+}
+
+.bg-blue {
+    background-color: rgb(244, 249, 254);
+}
+
+
+
+
+
+
