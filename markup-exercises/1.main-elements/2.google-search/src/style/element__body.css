@@ -1,0 +1,29 @@
+.element__body * {
+    margin-top: 10px;
+    margin-bottom: 6px;
+
+    line-height: 18px;
+}
+
+.element__body__title--blue, .element__body__title--darkorchid {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.element__body__title--blue, .element__body__footer {
+    color: blue;
+}
+
+.element__body__title--darkorchid {
+    color: darkorchid;
+}
+
+.element__body__paragraph {
+    font-size: 14px;
+    line-height: 22px;
+    color: dimgray;
+}
+
+.element__body__footer {
+    font-size: 15px;
+}

@@ -1,0 +1,12 @@
+* {
+    font-family: Arial, sans-serif;
+}
+
+a, a:visited {
+    text-decoration-line: none;
+}
+
+
+a:visited {
+    color:darkorchid;
+}

@@ -1,194 +1,169 @@
 <html lang="ru">
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="style/content.css" />
-    <link rel="stylesheet" type="text/css" href="style/title.css" />
-    <link rel="stylesheet" type="text/css" href="style/markup.css" />
-</head>
+    <link rel="stylesheet" type="text/css" href="style/system-overrides.css" />
+    <link rel="stylesheet" type="text/css" href="style/layout.css" />
+    <link rel="stylesheet" type="text/css" href="style/element.css" />
+    <link rel="stylesheet" type="text/css" href="style/element__header.css" />
+    <link rel="stylesheet" type="text/css" href="style/element__body.css" />
+  </head>
 
-
-<body>
-
-
+  <body>
     <div>
-        <p class="search-label">
-            Результатов: примерно 717 000 (0,34 сек.)
-        </p>
+      <p class="search-label">Результатов: примерно 717 000 (0,34 сек.)</p>
     </div>
 
     <div class="element-list">
+      <!-- element #1 -->
+      <div class="element">
+        <div class="element__header--flex">
+          <span class="element__header__link">
+            <p>http://htmlbook.ru</p>
+          </span>
 
+          <span class="element__header__path">
+            <p>› practical</p>
+          </span>
 
-
-        <!-- element #1 -->
-        <div class="element">
-
-            <div class="flex-container">
-
-                <span class="link">
-                    <p>http://htmlbook.ru</p>
-                </span>
-
-                <span class="path">
-                    <p>› practical</p>
-                </span>
-
-                <span class="button-span">
-                    <button class="triangle-button">
-                        ▾
-                    </button>
-                </span>
-
-            </div>
-
-            <a class="clicked-header lower-content">Практикум | htmlbook.ru</a>
-
-            <p class="main-text lower-content">
-                Практикум. Этот раздел предназначен для самостоятельного решения задач, связанных с
-                <b>HTML</b>, CSS и вёрсткой веб-страниц. Низкая сложность. ТЕХ ...
-            </p>
-
-            <span class="footer-text lower-content">
-                ТЕХ · Батарейка · <a href="https://ya.ru">Вложенные списки</a> · Верхний и нижний индекс ·
-            </span>
+          <span class="element__header__button-container">
+            <button class="element__header__triangle-button">▾</button>
+          </span>
         </div>
 
+        <div class="element__body">
+          <a class="element__body__title--darkorchid"
+            >Практикум | htmlbook.ru</a
+          >
+          <p class="element__body__paragraph">
+            Практикум. Этот раздел предназначен для самостоятельного решения
+            задач, связанных с
+            <b>HTML</b>, CSS и вёрсткой веб-страниц. Низкая сложность. ТЕХ ...
+          </p>
 
+          <span class="element__body__footer">
+            ТЕХ · Батарейка · <a href="https://ya.ru">Вложенные списки</a> ·
+            Верхний и нижний индекс ·
+          </span>
+        </div>
+      </div>
 
-        <!-- element #2 -->
-        <div class="element">
+      <!-- element #2 -->
+      <div class="element">
+        <div class="element__header--flex">
+          <span class="element__header__link">
+            <p>http://htmlbase.ru</p>
+          </span>
 
-            <div class="flex-container">
+          <span class="element__header__path">
+            <p>› exercises</p>
+          </span>
 
-                <span class="link">
-                    <p>http://htmlbase.ru</p>
-                </span>
-
-                <span class="path">
-                    <p>› exercises</p>
-                </span>
-
-                <span class="button-span">
-                    <button class="triangle-button">
-                        ▾
-                    </button>
-                </span>
-
-            </div>
-
-            <a class="clicked-header lower-content">Задачи для практики HTML и CSS - htmlbase.ru</a>
-
-            <p class="main-text lower-content">
-                Задачи для практики <b>HTML</b> и CSS. Выполняйте <b>задания</b> и практикуйте знания <b>HTML</b> и
-                CSS. Постоянная практика - верный путь к результату!
-            </p>
-
-            <span class="footer-text lower-content">
-                Оформление HTML разметки · Работа с... · Многоуровневая навигация...
-            </span>
+          <span class="element__header__button-container">
+            <button class="element__header__triangle-button">▾</button>
+          </span>
         </div>
 
+        <div class="element__body">
+          <a class="element__body__title--darkorchid"
+            >Задачи для практики HTML и CSS - htmlbase.ru</a
+          >
+          <p class="element__body__paragraph">
+            Задачи для практики <b>HTML</b> и CSS. Выполняйте <b>задания</b> и
+            практикуйте знания <b>HTML</b> и CSS. Постоянная практика - верный
+            путь к результату!
+          </p>
 
+          <span class="element__body__footer">
+            Оформление HTML разметки · Работа с... · Многоуровневая навигация...
+          </span>
+        </div>
+      </div>
 
-        <!-- element #3 -->
-        <div class="element">
+      <!-- element #3 -->
+      <div class="element">
+        <div class="element__header--flex">
+          <span class="element__header__link">
+            <p>http://old.code.mu</p>
+          </span>
 
-            <div class="flex-container">
+          <span class="element__header__path">
+            <p>› tasks › css</p>
+          </span>
 
-                <span class="link">
-                    <p>http://old.code.mu</p>
-                </span>
-
-                <span class="path">
-                    <p>› tasks › css</p>
-                </span>
-
-                <span class="button-span">
-                    <button class="triangle-button">
-                        ▾
-                    </button>
-                </span>
-
-            </div>
-
-            <a class="header lower-content">Задачник HTML+CSS от Трепачёва Дмитрия</a>
-
-            <p class="main-text lower-content">
-                Данный раздел сайта содержит <b>задачи</b> по <b>HTML</b> и CSS с начального уровня до
-                продвинутого. Ответы на <b>задачи</b> смотрите в исходном коде образцов.
-            </p>
-
-            <span class="footer-text lower-content">
-                Задачи на работу с... · Задачи для решения · Задачи на основы CSS...
-            </span>
+          <span class="element__header__button-container">
+            <button class="element__header__triangle-button">▾</button>
+          </span>
         </div>
 
+        <div class="element__body">
+          <a class="element__body__title--blue"
+            >Задачник HTML+CSS от Трепачёва Дмитрия</a
+          >
+          <p class="element__body__paragraph">
+            Данный раздел сайта содержит <b>задачи</b> по <b>HTML</b> и CSS с
+            начального уровня до продвинутого. Ответы на <b>задачи</b> смотрите
+            в исходном коде образцов.
+          </p>
 
+          <span class="element__body__footer">
+            Задачи на работу с... · Задачи для решения · Задачи на основы CSS...
+          </span>
+        </div>
+      </div>
 
-        <!-- element #4 -->
-        <div class="element">
+      <!-- element #4 -->
+      <div class="element">
+        <div class="element__header--flex">
+          <span class="element__header__link">
+            <p>http://okpython.net</p>
+          </span>
 
-            <div class="flex-container">
+          <span class="element__header__path">
+            <p>› sbornik_zadach_po_html</p>
+          </span>
 
-                <span class="link">
-                    <p>http://okpython.net</p>
-                </span>
-
-                <span class="path">
-                    <p>› sbornik_zadach_po_html</p>
-                </span>
-
-                <span class="button-span">
-                    <button class="triangle-button">
-                        ▾
-                    </button>
-                </span>
-
-            </div>
-
-            <a class="clicked-header lower-content">Сборник упражнений и задач по основам HTML</a>
-
-            <p class="main-text lower-content">
-                Задачник по <b>HTML</b> для <b>начинающих</b> Наш задачник по основам <b>HTML</b> содержит
-                стандартные упражнения и <b>задачи</b> с решениями на закрепление теоретических основ ...
-            </p>
+          <span class="element__header__button-container">
+            <button class="element__header__triangle-button">▾</button>
+          </span>
         </div>
 
+        <div class="element__body">
+          <a class="element__body__title--darkorchid"
+            >Сборник упражнений и задач по основам HTML</a
+          >
+          <p class="element__body__paragraph">
+            Задачник по <b>HTML</b> для <b>начинающих</b> Наш задачник по
+            основам <b>HTML</b> содержит стандартные упражнения и
+            <b>задачи</b> с решениями на закрепление теоретических основ ...
+          </p>
+        </div>
+      </div>
 
-        
-        <!-- element #5 -->
-        <div class="element">
+      <!-- element #5 -->
+      <div class="element">
+        <div class="element__header--flex">
+          <span class="element__header__link">
+            <p>http://htmllab.ru</p>
+          </span>
 
-            <div class="flex-container">
+          <span class="element__header__path">
+            <p>› Задания по веб-курсам</p>
+          </span>
 
-                <span class="link">
-                    <p>http://htmllab.ru</p>
-                </span>
-
-                <span class="path">
-                    <p>› Задания по веб-курсам</p>
-                </span>
-
-                <span class="button-span">
-                    <button class="triangle-button">
-                        ▾
-                    </button>
-                </span>
-
-            </div>
-
-            <a class="header lower-content">Задания по HTML - HTMLLab</a>
-
-            <p class="main-text lower-content">
-                <b>Задачи</b> по основам <b>HTML</b> призваны закрепить работу с набором следующих тем:
-                структура <b>HTML</b>, комментарии в <b>HTML</b>, основные теги, основные атрибуты HTML....
-            </p>
+          <span class="element__header__button-container">
+            <button class="element__header__triangle-button">▾</button>
+          </span>
         </div>
 
-
+        <div class="element__body">
+          <a class="element__body__title--blue">Задания по HTML - HTMLLab</a>
+          <p class="element__body__paragraph">
+            <b>Задачи</b> по основам <b>HTML</b> призваны закрепить работу с
+            набором следующих тем: структура <b>HTML</b>, комментарии в
+            <b>HTML</b>, основные теги, основные атрибуты HTML....
+          </p>
+        </div>
+      </div>
     </div>
-
-</body>
-
+  </body>
 </html>
