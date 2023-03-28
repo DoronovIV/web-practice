@@ -1,0 +1,80 @@
+
+
+
+.element {
+
+    align-items: left;
+
+    margin-top: 24px;
+
+    max-width: 600px;
+
+    font-family: Arial, sans-serif;
+
+}
+
+
+.lower-content {
+
+    margin-top: 10px;
+    margin-bottom: 6px;
+
+    line-height: 18px;
+
+    color: dimgray
+
+}
+
+
+.header, .clicked-header {
+
+    font-weight: 500;
+
+}
+
+
+.footer-text, .header {
+
+    color: blue;
+
+}
+
+
+.header, .clicked-header {
+
+    font-size: 20px;
+
+}
+
+
+.clicked-header {
+
+    color: darkorchid;
+
+}
+
+
+.main-text {
+
+    font-size: 14px;
+
+    line-height: 22px;
+
+}
+
+
+.footer-text {
+
+    font-size: 15px;
+
+}
+
+
+a, a:visited {
+    text-decoration-line: none;
+}
+
+
+a:visited {
+    color:darkorchid;
+}

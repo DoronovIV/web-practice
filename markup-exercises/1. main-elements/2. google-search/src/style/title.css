@@ -1,0 +1,41 @@
+
+
+
+.flex-container {
+    display: flex;
+}
+
+
+.upper-content {
+    justify-content: left;
+}
+
+
+.link, .path {
+    font-size: 14px;
+
+    line-height: 6px;
+}
+
+
+.path {
+    color:gray;
+    margin-left: 8px;
+}
+
+
+.button-span {
+    margin-top: 7px;
+
+    vertical-align:middle;
+}
+
+
+.triangle-button {
+    border-style: hidden;
+
+    background-color: transparent;
+
+    font-size: large;
+    color: gray;
+}

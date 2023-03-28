@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700');
+
+
+
+
+.font-family-montserrat {
+
+    font-family: Montserrat;
+
+}
+
+
+.update-banner-title {
+
+    font-weight: 600;
+    font-size: 19px;
+    font-weight: 600px;
+
+}
+
+
+.update-banner-contents{
+
+    font-weight: 500;
+    font-size: 16px;
+
+    line-height: 28px;
+
+}
+
+
+.download-button-text {
+
+    font-size: 15px;
+    font-weight: 600px;
+
+    color: white;
+
+}

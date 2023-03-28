@@ -1,0 +1,25 @@
+
+
+
+.search-label, .element-list {
+    margin-left: 200px;
+}
+
+
+.search-label {
+
+    margin-top: 30px;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+
+    color:dimgray;
+
+}
+
+
+.element-list {
+
+    margin-top: 10px;
+
+}

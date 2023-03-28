@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,500,600,700');
+
+
+ul {
+
+    list-style-type: none;
+
+}
+
+
+
+p {
+
+    margin: 0px;
+
+}
+
+
+
+.font-arial {
+
+    font-family: Open Sans, sans-serif;
+    src: local('')
+
+}
+
+
+
+.header {
+
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+
+
+.link-root {
+
+    font-weight: bold;
+
+}
+
+
+
+.link-path, .link-root {
+
+    font-size: 15px;
+
+}
+
+
+
+.main-text, .footer {
+
+    font-size: 13px;
+    font-variant: normal;
+    font-weight: 400;
+
+}
+
+
+
+.search-filter {
+
+    margin-left: 4px;
+
+    font-weight: 500;
+
+}

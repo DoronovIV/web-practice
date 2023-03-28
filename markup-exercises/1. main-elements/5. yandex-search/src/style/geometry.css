@@ -1,0 +1,59 @@
+
+
+
+.flex-container {
+
+    display: flex;
+
+}
+
+
+.logo-element-pair {
+
+    margin-top: 10px;
+
+}
+
+
+
+.element-list {
+
+    margin-left: 50px;
+    margin-top: 20px;
+
+}
+
+
+
+.element {
+
+    width: 620px;
+
+
+
+    padding-left: 14px;
+    padding-top: 10px;
+    padding-right: 14px;
+    padding-bottom: 10px;
+
+    border-radius: 10px;
+    border-width: 1px;
+
+    box-shadow: 1px 1px 1px lavender;
+
+
+}
+
+
+.horizontal-element {
+
+    margin-right: 4px;
+
+}
+
+
+.link-text-container {
+
+    margin-bottom: 3px;
+
+}

@@ -1,0 +1,13 @@
+.form-text-area {
+    padding: 10px;
+
+    border: none;
+    border-radius: 10px;
+    outline: none;
+
+    font-family: Open Sans;
+    font-size: 15px;
+
+    color: dimgrey;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}

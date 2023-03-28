@@ -1,0 +1,77 @@
+
+
+
+.flex-container {
+
+    display: flex;
+
+}
+
+
+.page-content {
+
+    margin:auto;
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+
+
+.banner {
+
+    margin: 10px;
+
+    border: medium;
+    border-width: 1px;
+    border-color: lightgrey;
+    border-radius: 5px;
+
+}
+
+
+.text-banner-element {
+
+    margin-left: 40px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+
+    width: 350px;
+
+}
+
+
+.download-button-element {
+
+    height: 48px;
+    width: 220px;
+
+    margin-top: 40px;
+
+    background-color: rgb(11, 141, 217);
+
+    border-width: 0px;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+}
+
+
+
+.gif-banner-element {
+    
+    margin-top: 26px;
+    margin-right: 30px;
+
+}
+
+
+.jpg-banner-element {
+
+    margin-right: 10px;
+
+}
