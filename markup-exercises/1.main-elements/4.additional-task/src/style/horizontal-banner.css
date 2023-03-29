@@ -1,0 +1,11 @@
+.horizontal-banner {
+    display: flex;
+    margin: 10px;
+
+    border: medium;
+    border-width: 1px;
+    border-color: lightgrey;
+    border-radius: 5px;
+
+    background-color: rgb(246, 250, 253);
+}
