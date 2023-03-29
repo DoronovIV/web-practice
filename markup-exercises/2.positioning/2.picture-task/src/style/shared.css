@@ -1,4 +1,4 @@
-.table-section-layout, .picture-section-layout {
+.shared-section {
     display: flex;
     flex-direction: column;
     
@@ -6,15 +6,16 @@
     padding: 0 160px 40px 160px;
 }
 
-.table-section-layout {
+.shared-table-section {
     background-color: rgb(244, 249, 254);
 }
 
-.picture-section-layout {
+.shared-picture-section {
     max-width: 1200px;
 }
 
-.header-layout {
+/* they are actually equal but I still wished to keep the semantics */
+.shared-table-caption, .shared-picture-list-caption {
     margin: 40px;
     margin-left: 240px;
 

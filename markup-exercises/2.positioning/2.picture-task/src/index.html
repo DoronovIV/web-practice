@@ -1,26 +1,17 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="style/flex-positioning.css" />
-    <link rel="stylesheet" type="text/css" href="style/picture-section.css" />
 
-    <link rel="stylesheet" type="text/css" href="style-new/layout.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="style-new/system-overrides.css"
-    />
+    <link rel="stylesheet" type="text/css" href="style/shared.css" />
+
+    <link rel="stylesheet" type="text/css" href="style/system-overrides.css" />
+
+    <link rel="stylesheet" type="text/css" href="style/table-component.css" />
 
     <link
       rel="stylesheet"
       type="text/css"
-      href="style-new/table-component.css"
-    />
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="style-new/picture-list-component.css"
+      href="style/picture-list-component.css"
     />
 
     <link
@@ -30,9 +21,9 @@
   </head>
 
   <body>
-    <div class="table-section-layout">
-      <h1 class="header-layout">Стоимость доставки</h1>
-      <div class="table-component-wrapper">
+    <div class="shared-section">
+      <h1 class="shared-table-caption">Стоимость доставки</h1>
+      <div class="table-wrapper">
         <table>
           <thead class="table__header">
             <th class="table__element--left">Страна</th>
@@ -85,9 +76,9 @@
       </div>
     </div>
 
-    <div class="picture-section-layout">
-      <h1 class="header-layout">Способ доставки</h1>
-      <div class="picture-section-container horizontal-flex-container">
+    <div class="shared-section">
+      <h1 class="shared-picture-list-caption">Способ доставки</h1>
+      <div class="picture-list-container">
         <span>
           <div class="image-wrapper bg-blue pic-div bus-div">
             <p class="image-text">Экспедирование</p>
@@ -104,7 +95,7 @@
           </div>
         </span>
       </div>
-      <div class="picture-section-container horizontal-flex-container">
+      <div class="picture-list-container">
         <span>
           <div class="image-wrapper bg-blue pic-div tools-div">
             <p class="image-text">Перевозка стройматериалов</p>

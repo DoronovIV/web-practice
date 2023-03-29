@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,500,600,700,800,900,1000');
 
 
-.picture-section-container {
+.picture-list-container {
+    display: flex;
     margin-left: 240px;
     margin-bottom: 14px;
 }
