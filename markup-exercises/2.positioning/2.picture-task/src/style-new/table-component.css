@@ -8,7 +8,14 @@
 }
 
 
-.left-table-element, .center-table-element, .right-table-element {
+
+.table__header {
+    border-radius: 10px;
+}
+
+
+
+.table__element--left, .table__element--center, .table__element--right {
     padding-left: 20px;
     padding-top: 16px;
     padding-right: 20px;
@@ -16,18 +23,14 @@
     width: 320px;
 }
 
-.table-header {
-    border-radius: 10px;
-}
-
-.left-table-element {
+.table__element--left {
     text-align: left;
 }
 
-.center-table-element {
+.table__element--center {
     text-align: center;
 }
 
-.right-table-element {
+.table__element--right {
     text-align: right;
 }

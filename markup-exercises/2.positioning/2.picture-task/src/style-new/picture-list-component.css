@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,500,600,700,800,900,1000');
+
+
+.picture-section-container {
+    margin-left: 240px;
+    margin-bottom: 14px;
+}
+
+
+.image-text {
+    width: 180px;
+    z-index: 2;
+
+    margin-left: 16px;
+    margin-top: 14px;
+    margin-right: 10px;
+
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.image-wrapper {
+    width: auto;
+    height: 110px;
+    flex-wrap: nowrap;
+    border-radius: 14px;
+}
+
+.paragraph-image-container {
+
+    margin: 10px;
+    border-radius: 14px;
+    background-color: rgb(244, 249, 254);
+}
+
+
+
+.pic-div {
+    width: 280px;
+    height: 120px;
+
+    padding-top: 2px;
+
+    position: relative;
+    margin-right: 14px;
+    border-radius: 14px;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom;
+    background-color: rgb(244, 249, 254);
+}
+
+.bus-div, .wtf-div {
+    background-size: 120px 104px;
+}
+
+.wtf-div, .tools-div {
+    width: 240px;
+}
+
+.bus-div {
+    background-image: url("../../resources/bus.png");
+}
+
+.drug-div {
+    background-image: url("../../resources/drugs.png");
+}
+
+.wtf-div {
+    background-image: url("../../resources/wtf.png");
+}
+
+.tools-div {
+    background-image: url("../../resources/tools.png");
+}
+
+.fruit-div {
+    background-image: url("../../resources/fruit.png");
+}
+
