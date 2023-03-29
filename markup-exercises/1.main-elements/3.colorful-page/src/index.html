@@ -7,43 +7,47 @@
     <link rel="stylesheet" type="text/css" href="style/system-overrides.css" />
     <link rel="stylesheet" type="text/css" href="style/layout.css" />
     <link rel="stylesheet" type="text/css" href="style/element.css" />
-</head>
+
+    <link rel="stylesheet" type="text/css" href="style/label.css" />
+  </head>
 
   <body>
     <div class="main-content">
-      <h1 id="top-header">Задачи для практики HTML и CSS</h1>
-      <p id="top-paragraph">
-        Выполняйте задания и практикуйте знания HTML и CSS. Постоянная практика
-        - верный путь к результату!
-      </p>
+      <div class="label">
+        <h1 class="label__title">Задачи для практики HTML и CSS</h1>
+        <p class="label__description">
+          Выполняйте задания и практикуйте знания HTML и CSS. Постоянная
+          практика - верный путь к результату!
+        </p>
+      </div>
 
       <ul class="element-list">
         <!-- #1 working-with-text element -->
         <li>
           <a href="https://ya.ru">
-            <div class="element border-right-green">
-              <p class="blue-label">Работа с текстом</p>
-              <p class="difficulty-level-label">уровень: начинающий</p>
-              <p class="description-label">
+            <div class="element">
+              <p class="element__title">Работа с текстом</p>
+              <p class="element__difficulty-level-label">уровень: начинающий</p>
+              <p class="element__description-label">
                 Задача по HTML и CSS: работа с тегами для оформления текста и
                 стилизация текста используя CSS.
               </p>
 
-              <div class="flex-container padding-top-30px">
-                <span class="bottom-span">
-                  <p class="span-paragraph">html</p>
+              <div class="element__tag-list">
+                <span class="element__tag">
+                  <p class="element__tag__paragraph">html</p>
                 </span>
 
-                <span class="bottom-span">
-                  <p class="span-paragraph">css</p>
+                <span class="element__tag">
+                  <p class="element__tag__paragraph">css</p>
                 </span>
 
-                <span class="bottom-span">
-                  <p class="span-paragraph">работа с текстом</p>
+                <span class="element__tag">
+                  <p class="element__tag__paragraph">работа с текстом</p>
                 </span>
 
-                <span class="bottom-span">
-                  <p class="span-paragraph">оформление текста</p>
+                <span class="element__tag">
+                  <p class="element__tag__paragraph">оформление текста</p>
                 </span>
               </div>
             </div>
@@ -53,24 +57,24 @@
         <!-- #2 working-with-links element -->
         <li>
           <a href="https://ya.ru">
-            <div class="element border-right-green">
-              <p class="blue-label">Работа со ссылками</p>
-              <p class="difficulty-level-label">уровень: начинающий</p>
-              <p class="description-label">
+            <div class="element">
+              <p class="element__title">Работа со ссылками</p>
+              <p class="element__difficulty-level-label">уровень: начинающий</p>
+              <p class="element__description-label">
                 Задача по HTML: работа со ссылками и их атрибутами
               </p>
 
-              <div class="flex-container padding-top-30px">
-                <span class="bottom-span">
-                  <p class="span-paragraph">html</p>
+              <div class="element__tag-list">
+                <span class="element__tag">
+                  <p class="element__tag__paragraph">html</p>
                 </span>
 
-                <span class="bottom-span">
-                  <p class="span-paragraph">ссылки</p>
+                <span class="element__tag">
+                  <p class="element__tag__paragraph">ссылки</p>
                 </span>
 
-                <span class="bottom-span">
-                  <p class="span-paragraph">атрибуты</p>
+                <span class="element__tag">
+                  <p class="element__tag__paragraph">атрибуты</p>
                 </span>
               </div>
             </div>
@@ -80,28 +84,28 @@
         <!-- #3 working-with-tables element -->
         <li>
           <a href="https://ya.ru">
-            <div class="element border-right-green">
-              <p class="blue-label">Работа с таблицами</p>
-              <p class="difficulty-level-label">уровень: начинающий</p>
-              <p class="description-label">
+            <div class="element">
+              <p class="element__title">Работа с таблицами</p>
+              <p class="element__difficulty-level-label">уровень: начинающий</p>
+              <p class="element__description-label">
                 Задача по HTML и CSS: создание HTML таблиц и работа с ними
               </p>
 
-              <div class="flex-container padding-top-30px">
-                <span class="bottom-span">
-                  <p class="span-paragraph">html</p>
+              <div class="element__tag-list">
+                <span class="element__tag">
+                  <p class="element__tag__paragraph">html</p>
                 </span>
 
-                <span class="bottom-span">
-                  <p class="span-paragraph">css</p>
+                <span class="element__tag">
+                  <p class="element__tag__paragraph">css</p>
                 </span>
 
-                <span class="bottom-span">
-                  <p class="span-paragraph">таблицы</p>
+                <span class="element__tag">
+                  <p class="element__tag__paragraph">таблицы</p>
                 </span>
 
-                <span class="bottom-span">
-                  <p class="span-paragraph">tables</p>
+                <span class="element__tag">
+                  <p class="element__tag__paragraph">tables</p>
                 </span>
               </div>
             </div>
@@ -111,31 +115,31 @@
         <!-- #4 working-with-positioning element -->
         <li>
           <a href="https://ya.ru">
-            <div class="element border-right-green">
-              <p class="blue-label">
+            <div class="element">
+              <p class="element__title">
                 Работа с позиционированием. Абсолютное и относительное
               </p>
-              <p class="difficulty-level-label">уровень: начинающий</p>
-              <p class="description-label">
+              <p class="element__difficulty-level-label">уровень: начинающий</p>
+              <p class="element__description-label">
                 Задача по HTML и CSS: работа с абсолютным и относительным
                 позиционированием в CSS.
               </p>
 
-              <div class="flex-container padding-top-30px">
-                <span class="bottom-span">
-                  <p class="span-paragraph">html</p>
+              <div class="element__tag-list">
+                <span class="element__tag">
+                  <p class="element__tag__paragraph">html</p>
                 </span>
 
-                <span class="bottom-span">
-                  <p class="span-paragraph">css</p>
+                <span class="element__tag">
+                  <p class="element__tag__paragraph">css</p>
                 </span>
 
-                <span class="bottom-span">
-                  <p class="span-paragraph">позиционирование</p>
+                <span class="element__tag">
+                  <p class="element__tag__paragraph">позиционирование</p>
                 </span>
 
-                <span class="bottom-span">
-                  <p class="span-paragraph">position</p>
+                <span class="element__tag">
+                  <p class="element__tag__paragraph">position</p>
                 </span>
               </div>
             </div>

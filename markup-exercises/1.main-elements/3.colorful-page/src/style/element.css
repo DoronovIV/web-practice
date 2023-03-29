@@ -7,6 +7,58 @@
     padding-top: 30px;
     padding-right: 28px;
     padding-bottom: 26px;
+    
+    border-right: solid;
+    border-right-width: 4px;
+    border-right-color: rgb(140, 190, 149);
 
     background-color: white;
+}
+
+
+
+.element__title {
+    font-size: 18px;
+    color: blue;
+}
+
+
+.element__difficulty-level-label {
+    margin-top: 6px;
+
+    color: black;
+    font-size: 12px;
+    font-weight: 500;
+
+    text-transform: lowercase;
+}
+
+
+.element__description-label {
+    margin-top: 20px;
+
+    color: black;
+    font-size: 12px;
+}
+
+
+
+.element__tag-list {
+    display: flex;
+    padding-top: 30px;
+}
+
+.element__tag {
+    margin-right: 6px;
+    background-color: rgb(132, 147, 186);
+}
+
+.element__tag__paragraph {
+    margin-left: 8px;
+    margin-top: 2px;
+    margin-right: 8px;
+    margin-bottom: 2px;
+
+    font-size: 12px;
+    color:floralwhite;
 }

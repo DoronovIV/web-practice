@@ -1,0 +1,11 @@
+.label {
+    width: 1200px;
+}
+
+.label__title {
+    margin-bottom: 6px;
+}
+
+.label__description {
+    margin-top: 6px;
+}
