@@ -6,7 +6,7 @@ Also: **This directory is the root one for the Jouster targeting path**.
 <br />
 
 ## Previous preview
-[first set of exercises](https://github.com/DoronovIV/web-practice/tree/main/markup-exercises/1.%20first-set)
+[first set of exercises](https://github.com/DoronovIV/web-practice/tree/main/markup-exercises/1.main-elements)
 
 <br />
 
