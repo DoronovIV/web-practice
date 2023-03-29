@@ -48,6 +48,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right bottom;
+    background-color: rgb(244, 249, 254);
 }
 
 .bus-div, .wtf-div {

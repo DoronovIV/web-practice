@@ -1,0 +1,29 @@
+.table-section-layout, .picture-section-layout {
+    display: flex;
+    flex-direction: column;
+    
+    margin: 40px 40px 40px 40px;
+    padding: 0 160px 40px 160px;
+}
+
+.table-section-layout {
+    background-color: rgb(244, 249, 254);
+}
+
+.picture-section-layout {
+    max-width: 1200px;
+}
+
+.header-layout {
+    margin: 40px;
+    margin-left: 240px;
+
+    font-size: 40px;
+}
+
+
+
+
+
+
+

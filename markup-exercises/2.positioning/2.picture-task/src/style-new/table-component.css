@@ -1,0 +1,33 @@
+.table-component-wrapper {
+    margin: auto;
+    margin-bottom: 20px;
+
+    width: 1000px;
+    overflow: auto;
+    border-radius: 10px;
+}
+
+
+.left-table-element, .center-table-element, .right-table-element {
+    padding-left: 20px;
+    padding-top: 16px;
+    padding-right: 20px;
+    padding-bottom: 16px;
+    width: 320px;
+}
+
+.table-header {
+    border-radius: 10px;
+}
+
+.left-table-element {
+    text-align: left;
+}
+
+.center-table-element {
+    text-align: center;
+}
+
+.right-table-element {
+    text-align: right;
+}
