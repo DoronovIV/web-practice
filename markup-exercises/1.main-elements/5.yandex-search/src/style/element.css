@@ -1,0 +1,46 @@
+.element-list {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.element-container {
+    margin-top: 10px;
+}
+
+.element {
+    width: 620px;
+
+    padding-left: 14px;
+    padding-top: 10px;
+    padding-right: 14px;
+    padding-bottom: 10px;
+
+    border-radius: 10px;
+    border-width: 1px;
+
+    box-shadow: 1px 1px 1px lavender;
+    background-color: white;
+}
+
+
+.element__title {
+    color: darkblue;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+.element__paragraph, .element__footer {
+    font-size: 13px;
+    font-variant: normal;
+    font-weight: 400;
+}
+
+.element__footer {
+    display: flex;
+}
+
+.element__footer__search-filter {
+    margin-left: 4px;
+    font-weight: 500;
+}

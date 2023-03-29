@@ -1,0 +1,17 @@
+.element__link-container {
+    display: flex;
+    margin-bottom: 3px;
+}
+
+.element__link-container__horizontal-element {
+    margin-right: 4px;
+}
+
+.element__link-container__link-root, .element__link-container__link-path {
+    font-size: 15px;
+    color: green;
+}
+
+.element__link-container__link-root {
+    font-weight: bold;
+}
