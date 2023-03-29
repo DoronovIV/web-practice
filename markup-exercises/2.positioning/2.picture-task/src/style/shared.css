@@ -1,4 +1,4 @@
-.shared-section {
+.shared__section {
     display: flex;
     flex-direction: column;
     
@@ -6,16 +6,16 @@
     padding: 0 160px 40px 160px;
 }
 
-.shared-table-section {
+.shared__table-section {
     background-color: rgb(244, 249, 254);
 }
 
-.shared-picture-section {
+.shared__picture-section {
     max-width: 1200px;
 }
 
 /* they are actually equal but I still wished to keep the semantics */
-.shared-table-caption, .shared-picture-list-caption {
+.shared__table-caption, .shared__picture-list-caption {
     margin: 40px;
     margin-left: 240px;
 

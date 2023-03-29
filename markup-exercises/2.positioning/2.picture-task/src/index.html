@@ -3,9 +3,7 @@
     <meta charset="utf-8" />
 
     <link rel="stylesheet" type="text/css" href="style/shared.css" />
-
     <link rel="stylesheet" type="text/css" href="style/system-overrides.css" />
-
     <link rel="stylesheet" type="text/css" href="style/table-component.css" />
 
     <link
@@ -21,8 +19,8 @@
   </head>
 
   <body>
-    <div class="shared-section">
-      <h1 class="shared-table-caption">Стоимость доставки</h1>
+    <div class="shared__section shared__table-section">
+      <h1 class="shared__table-caption">Стоимость доставки</h1>
       <div class="table-wrapper">
         <table>
           <thead class="table__header">
@@ -76,39 +74,45 @@
       </div>
     </div>
 
-    <div class="shared-section">
-      <h1 class="shared-picture-list-caption">Способ доставки</h1>
-      <div class="picture-list-container">
+    <div class="shared__section shared__picture-list-section">
+      <h1 class="shared__picture-list-caption">Способ доставки</h1>
+
+      <div class="picture-list">
         <span>
-          <div class="image-wrapper bg-blue pic-div bus-div">
-            <p class="image-text">Экспедирование</p>
+          <div class="picture-list__item picture-list__item--background--bus">
+            <p class="picture-list__item__paragraph">Экспедирование</p>
           </div>
         </span>
         <span>
-          <div class="image-wrapper bg-blue pic-div drug-div">
-            <p class="image-text">Перевозка медикаментов</p>
+          <div class="picture-list__item picture-list__item--background--drug">
+            <p class="picture-list__item__paragraph">Перевозка медикаментов</p>
           </div>
         </span>
         <span>
-          <div class="image-wrapper bg-blue pic-div wtf-div">
-            <p class="image-text">Сборные<br />рефгрузы</p>
+          <div class="picture-list__item picture-list__item--background--wtf">
+            <p class="picture-list__item__paragraph">Сборные<br />рефгрузы</p>
           </div>
         </span>
       </div>
-      <div class="picture-list-container">
+
+      <div class="picture-list">
         <span>
-          <div class="image-wrapper bg-blue pic-div tools-div">
-            <p class="image-text">Перевозка стройматериалов</p>
+          <div class="picture-list__item picture-list__item--background--tools">
+            <p class="picture-list__item__paragraph">
+              Перевозка стройматериалов
+            </p>
           </div>
         </span>
         <span>
-          <div class="image-wrapper bg-blue pic-div fruit-div">
-            <p class="image-text">Перевозка продуктов питания</p>
+          <div class="picture-list__item picture-list__item--background--fruit">
+            <p class="picture-list__item__paragraph">
+              Перевозка продуктов питания
+            </p>
           </div>
         </span>
         <span>
-          <div class="image-wrapper bg-blue pic-div bus-div">
-            <p class="image-text">Экспедирование</p>
+          <div class="picture-list__item picture-list__item--background--bus">
+            <p class="picture-list__item__paragraph">Экспедирование</p>
           </div>
         </span>
       </div>
