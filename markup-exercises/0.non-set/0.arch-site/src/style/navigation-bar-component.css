@@ -1,0 +1,34 @@
+.navigation-bar {
+    width: 100%;
+    height: 60px;
+
+    background-color: rgb(13,64,147);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.2) 0px 10px 10px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.30) 0px -3px 5px;
+}
+
+.navigation-bar__button-array--flex {
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 10px;
+}
+
+
+.navigation-bar__button {
+    width: 40px;
+    height: 40px;
+}
+
+.navigation-bar__button--background--menu {
+    background-image: url('/resources/menu.png');
+}
+
+.navigation-bar__button--background--home {
+    background-image: url('/resources/home.png');
+}
+
+.navigation-bar__button--background--about {
+    background-image: url('/resources/about.png');
+}
