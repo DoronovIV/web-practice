@@ -1,0 +1,31 @@
+.left-sidebar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    width: 19%;
+    height: 3000px;
+
+    margin: 12px;
+
+    border-radius: 3px;
+
+    padding-left: 20px;
+    padding-top: 10px;
+
+    background-color: rgb(13,64,147);
+    box-shadow: 5px 5px 15px black;
+}
+
+.left-sidebar__image-container {
+    width: fit-content;
+    height: fit-content;
+
+    margin-bottom: 18px;
+}
+
+
+.left-sidebar__image {
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
