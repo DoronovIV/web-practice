@@ -16,13 +16,23 @@
 }
 
 
-.navigation-bar__button {
-    width: 40px;
-    height: 40px;
+.navigation-bar__button--background--menu, .navigation-bar__button--background--home, .navigation-bar__button--background--about {
+    width: 50px;
+    height: 28px;
+
+    margin-right: 32px;
+    padding-bottom: 8px;
+    border-radius: 10px;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:rgb(0, 53, 131);
 }
 
 .navigation-bar__button--background--menu {
     background-image: url('/resources/menu.png');
+    padding-left: -4px;
+    width: 46px;
 }
 
 .navigation-bar__button--background--home {
