@@ -1,20 +1,27 @@
 @import url('https://fonts.cdnfonts.com/css/avenir-next-cyr?styles=17338,17329,17339,17334,17336,17328,17331');
 
 .body__form-image {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 800px);
 
+    font-family: 'Avenir Next Cyr Light', sans-serif !important;
     margin-top: 100px;
 }
 
 .body__form-image__form {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-column: 1 / 2;
 
-    gap: 20px;
+    grid-template-rows: repeat(2, 300px);
 }
 
+
 .body__form-image__form__large-label {
+    display: grid;
+    grid-row: 1 / 2;
+
+    height: 200px;
+
     font-family: 'Avenir Next Cyr Light', sans-serif !important;
     font-style: normal;
     font-weight: 300;
@@ -24,15 +31,76 @@
     text-transform: uppercase;
 }
 
-.body__form-image__form__elipse {
-    box-sizing: border-box;
+.body__form-image__form__controls {
+    display: grid;
+    grid-row: 2 / 2;
 
-    border-radius: 50%;
-    position: absolute;
+    grid-template-columns: repeat(2);
+}
+
+
+.body__form-image__form__ellipse-site {
+    display: grid;
+    grid-column: 1 / 2;
+
+
+    width: 100px;
+    height: 100px;
+
+}
+
+
+.body__form-image__form__ellipse {
     width: 45px;
     height: 45px;
-    left: 200px;
-    top: 559px;
-
+    
+    border-radius: 50%;
+    box-sizing: border-box;
     border: 1px solid #728095;
 }
+
+
+.body__form-image__form__button-label-site {
+    display: grid;
+    grid-column: 2 / 2;
+
+    grid-template-rows: repeat(2, 100px);
+}
+
+
+.body__form-image__form__button-label-site__label {
+    display: grid;
+    grid-row: 1 / 2;
+
+    width: 598px;
+    height: 70px;
+
+    font-family: 'Avenir Next Cyr';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+
+.body__form-image__form__button-label-site__button-container {
+    display: grid;
+    grid-row: 2 / 2;
+}
+
+.body__form-image__form__button-label-site__button {
+    width: 261px;
+    height: 70px;
+
+    font-family: 'Avenir Next Cyr';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+
+    border: none;
+    border-radius: 35px;
+    color: white;
+    background-color: #FF374F;
+}
+

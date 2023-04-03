@@ -5,13 +5,75 @@
     flex-direction: row;
     justify-content: space-between;
 
-    margin-left: 200px;
 
-    width: 1000px;
+    width: 1250px;
     height: 100px;
 
     text-transform: uppercase;
+}
 
+
+.header__logo {
+    position: relative;
+    width: 200px;
+
+    cursor: pointer;
+}
+
+.header__logo__picture {
+    margin-right: 10px;
+}
+
+.header__logo__picture--square1 {
+    position: absolute;
+    z-index: 1;
+    width: 47.3px
+}
+
+.header__logo__picture--square2 {
+    position: absolute;
+    z-index: 2;
+
+    width: 32.21px;
+    height: 31.33px;
+    top: 7.38px;
+    left: 7.54px;
+}
+
+.header__logo__picture--square3 {
+    position: absolute;
+    z-index: 3;
+
+    width: 21.93px;
+    height: 21.33px;
+    top: 12.33px;
+    left: 12.68px;
+}
+
+.header__logo__picture--square4 {
+    position: absolute;
+    z-index: 4;
+
+    width: 14.94px;
+    height: 14.53px;
+    top: 15.77px;
+    left: 16.18px;
+}
+
+.header__logo__picture--cross {
+    position: absolute;
+    z-index: 5;
+
+    width: 43.48px;
+    height: 42.28px;
+    top: 1.86px;
+    left: 1.91px;
+}
+
+.header__logo__text-logo {
+    position: absolute;
+    left: 54.51px;
+    top: 6.64px;
 }
 
 .header__link-array {

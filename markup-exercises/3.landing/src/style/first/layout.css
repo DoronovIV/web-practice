@@ -1,11 +1,9 @@
 .first-page {
     width: 1920px;
-    height: 1080px;
+    height: 2080px;
 
-    padding-top: 50px;
+    padding-top: 40px;
     padding-left: 200px;
-
-    overflow: hidden;
 
     background-image: url('/resources/images/sky.jpeg');
     background-repeat: no-repeat;
