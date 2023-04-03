@@ -1,3 +1,9 @@
-.header {
-    
+.first-page {
+    width: 1920px;
+    height: 1080px;
+
+    overflow-x: hidden;
+
+    background-image: url('/resources/images/sky.jpeg');
+    background-repeat: no-repeat;
 }
