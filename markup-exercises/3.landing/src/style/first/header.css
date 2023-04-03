@@ -1,21 +1,17 @@
-@import url('https://fonts.cdnfonts.com/css/avenir-next-cyr?styles=17338,17329,17339,17336,17328,17331');
+@import url('https://fonts.cdnfonts.com/css/avenir-next-cyr?styles=17338,17329,17339,17334,17336,17328,17331');
 
 .header {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 
-    margin: 0 auto;
-    margin-top: 40px;
+    margin-left: 200px;
 
-    width: 1500px;
+    width: 1000px;
     height: 100px;
 
     text-transform: uppercase;
 
-}
-
-.header__vector-logo {
 }
 
 .header__link-array {
@@ -60,6 +56,6 @@
     position: absolute;
     width: 22px;
     height: 23px;
-    left: 775px;
-    top: 65px;
+    left: 820px;
+    top: 75px;
 }

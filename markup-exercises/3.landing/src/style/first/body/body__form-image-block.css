@@ -1,0 +1,38 @@
+@import url('https://fonts.cdnfonts.com/css/avenir-next-cyr?styles=17338,17329,17339,17334,17336,17328,17331');
+
+.body__form-image {
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 100px;
+}
+
+.body__form-image__form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.body__form-image__form__large-label {
+    font-family: 'Avenir Next Cyr Light', sans-serif !important;
+    font-style: normal;
+    font-weight: 300;
+
+    line-height: 60px;
+    font-size: 42px;
+    text-transform: uppercase;
+}
+
+.body__form-image__form__elipse {
+    box-sizing: border-box;
+
+    border-radius: 50%;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    left: 200px;
+    top: 559px;
+
+    border: 1px solid #728095;
+}

@@ -8,6 +8,11 @@
     font-family: 'Avenir Next Cyr';
 }
 
+body {
+    position: fixed;
+    overflow-y: auto;
+}
+
 
 a, a:visited {
     text-decoration-line: none;
