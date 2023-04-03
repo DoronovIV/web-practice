@@ -1,5 +1,6 @@
 .header__logo {
     position: relative;
+    margin-top: 6px;
     width: 200px;
 
     cursor: pointer;
@@ -12,6 +13,7 @@
 .header__logo__picture--square1 {
     position: absolute;
     z-index: 1;
+    height: 46px;
     width: 47.3px
 }
 
