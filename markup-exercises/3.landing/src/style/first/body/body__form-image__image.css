@@ -7,9 +7,17 @@
     margin-top: -100px;
 }
 
-.body__form-image__image--crane {
+
+.body__form-image__image--crane, .body__form-image__image--building, .body__form-image__image--container,
+.body__form-image__image--line6, .body__form-image__image--line7, .body__form-image__image--line8,
+.body__form-image__image--line9 {
     position: absolute;
+}
+
+
+.body__form-image__image--crane {
     z-index: 10;
+
     width: 456px;
     height: 456px;
     background-size: contain;
@@ -17,7 +25,6 @@
 }
 
 .body__form-image__image--building {
-    position: absolute;
     z-index: 20;
     margin-top: 200px;
     margin-left: -190px;
@@ -29,7 +36,6 @@
 }
 
 .body__form-image__image--container {
-    position: absolute;
     z-index: 15;
     margin-top: 240px;
     margin-left: 30px;
@@ -38,4 +44,23 @@
     height: 171px;
     background-size: contain;
     background-image: url('/resources/images/container.png');
+}
+
+.body__form-image__image--line6 {
+    width: 84px;
+    height: 0px;
+    margin-top: 270px;
+    margin-left: 80px;
+
+    border: 1px solid #D9D9D9;
+    transform: rotate(-23.88deg);
+}
+.body__form-image__image--line8 {
+    width: 22px;
+    height: 0px;
+    margin-top: 266px;
+    margin-left: 146px;
+
+    border: 1px solid #D9D9D9;
+    transform: rotate(110.53deg);
 }
