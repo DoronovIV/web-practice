@@ -1,0 +1,41 @@
+.body__form-image__image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    margin-left: 100px;
+    margin-top: -100px;
+}
+
+.body__form-image__image--crane {
+    position: absolute;
+    z-index: 10;
+    width: 456px;
+    height: 456px;
+    background-size: contain;
+    background-image: url('/resources/images/crane.png');
+}
+
+.body__form-image__image--building {
+    position: absolute;
+    z-index: 20;
+    margin-top: 200px;
+    margin-left: -190px;
+
+    width: 779px;
+    height: 561px;
+    background-size: contain;
+    background-image: url('/resources/images/building.png');
+}
+
+.body__form-image__image--container {
+    position: absolute;
+    z-index: 15;
+    margin-top: 240px;
+    margin-left: 30px;
+
+    width: 223px;
+    height: 171px;
+    background-size: contain;
+    background-image: url('/resources/images/container.png');
+}
