@@ -1,0 +1,14 @@
+.footer__lower-label__container {
+    margin-top: 40px;
+}
+
+
+.footer__lower-label__text {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 42px;
+
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
