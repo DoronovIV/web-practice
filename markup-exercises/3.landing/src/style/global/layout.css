@@ -1,5 +1,5 @@
 .first-page {
-    width: 1920px;
+    max-width: 1920px;
     height: 2080px;
 
     padding-top: 40px;
