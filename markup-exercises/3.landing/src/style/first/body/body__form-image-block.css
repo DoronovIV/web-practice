@@ -3,7 +3,5 @@
 .body__form-image {
     display: grid;
     grid-template-columns: repeat(2, 800px);
-
-    font-family: 'Avenir Next Cyr Light', sans-serif !important;
     margin-top: 60px;
 }

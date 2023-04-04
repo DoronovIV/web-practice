@@ -1,4 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/avenir-next-cyr?styles=17338,17329,17339,17334,17336,17328,17331');
+@import url('https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600,700,800,900,1000');
 
 .footer__item-list-container__item {
     display: flex;
@@ -6,12 +6,10 @@
     justify-content: space-around;
     align-content: flex-start;
 
-    margin-top: 80px;
-
     padding-left: 40px;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-right: 40px;
-    padding-bottom: 20px;
+    padding-bottom: -20px;
 
     width: 220px;
     height: 169px;
@@ -22,8 +20,15 @@
 
 
 .footer__item-list-container__item__text {
-    font-family: 'Avenir Next Cyr', sans serif;
-    font-weight: 450;
+    margin-top: -40px;
+    font: 400 'Roboto', sans serif;
     font-size: 14px;
     line-height: 22px;
+}
+
+.footer__item-list-container__item__image--clock {
+    width: 32px;
+    height: 32px;
+
+    fill: linear-gradient(51.19deg, #63AFCD 22.46%, #FF374F 111.79%);
 }
