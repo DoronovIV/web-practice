@@ -1,6 +1,6 @@
 .first-page {
-    max-width: 1920px;
-    height: 2080px;
+    width: 1920px;
+    height: 1080px;
 
     padding-top: 40px;
     padding-left: 200px;
@@ -9,3 +9,15 @@
     background-repeat: no-repeat;
 }
 
+.first-page-extension {
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+
+    top :1080px;
+
+
+    background-image: url('/resources/images/sky.jpeg');
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+}
