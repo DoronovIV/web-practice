@@ -1,5 +1,6 @@
-.body__cloud-layer > {
+.body__cloud-layer {
     position: absolute;
+    margin-top: 650px;
 }
 
 
