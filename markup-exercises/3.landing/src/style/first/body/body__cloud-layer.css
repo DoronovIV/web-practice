@@ -26,7 +26,7 @@
 .body__cloud-layer__cloud15 {
     z-index: 105;
     position: absolute;
-    margin-left: 700px;
+    margin-left: 780px;
     margin-top: -160px;
 
     width: 187.74px;
@@ -36,8 +36,10 @@
 .body__cloud-layer__cloud16 {
     z-index: 100;
     position: absolute;
-    margin-left: 700px;
+    margin-left: 817px;
     margin-top: -160px;
+
+    transform: matrix(1, 0, 0, -1, 0, 0);
 
     width: 187.74px;
     height: 100.98px;
@@ -46,7 +48,7 @@
 .body__cloud-layer__cloud17 {
     z-index: 100;
     position: absolute;
-    margin-left: 700px;
+    margin-left: 907px;
     margin-top: -160px;
 
     width: 187.74px;
@@ -56,7 +58,7 @@
 .body__cloud-layer__cloud18 {
     z-index: 100;
     position: absolute;
-    margin-left: 700px;
+    margin-left: 907px;
     margin-top: -160px;
 
     width: 187.74px;
@@ -66,7 +68,7 @@
 .body__cloud-layer__cloud19 {
     z-index: 100;
     position: absolute;
-    margin-left: 700px;
+    margin-left: 978px;
     margin-top: -160px;
 
     width: 187.74px;
@@ -76,58 +78,58 @@
 .body__cloud-layer__cloud20 {
     z-index: 100;
     position: absolute;
-    margin-left: 700px;
-    margin-top: -160px;
+    margin-left: 1091px;
+    margin-top: -125px;
 
-    width: 187.74px;
-    height: 100.98px;
+    width: 119.47px;
+    height: 64px;
     background-image: url('/resources/images/cloud_PNG6-20.png');
 }
 .body__cloud-layer__cloud21 {
     z-index: 100;
     position: absolute;
-    margin-left: 700px;
-    margin-top: -160px;
+    margin-left: 1091px;
+    margin-top: -125px;
 
-    width: 187.74px;
-    height: 100.98px;
+    width: 119.47px;
+    height: 64px;
     background-image: url('/resources/images/cloud_PNG6-21.png');
 }
 .body__cloud-layer__cloud22 {
-    z-index: 100;
+    z-index: 105;
     position: absolute;
-    margin-left: 700px;
-    margin-top: -160px;
+    margin-left: 1079px;
+    margin-top: -124px;
 
-    width: 187.74px;
-    height: 100.98px;
+    width: 119.47px;
+    height: 64px;
     background-image: url('/resources/images/cloud_PNG6-22.png');
 }
 .body__cloud-layer__cloud23 {
     z-index: 100;
     position: absolute;
-    margin-left: 700px;
-    margin-top: -160px;
+    margin-left: 761px;
+    margin-top: -134px;
 
-    width: 187.74px;
-    height: 100.98px;
+    width: 310.06px;
+    height: 166.41px;
     background-image: url('/resources/images/cloud_PNG6-23.png');
 }
 .body__cloud-layer__cloud24 {
-    z-index: 100;
+    z-index: 110;
     position: absolute;
-    margin-left: 700px;
-    margin-top: -160px;
+    margin-left: 1320px;
+    margin-top: -126px;
 
-    width: 187.74px;
-    height: 100.98px;
+    width: 119.47px;
+    height: 64px;
     background-image: url('/resources/images/cloud_PNG6-24.png');
 }
 .body__cloud-layer__cloud25 {
     z-index: 100;
     position: absolute;
-    margin-left: 700px;
-    margin-top: -160px;
+    margin-left: 1091px;
+    margin-top: -159px;
 
     width: 187.74px;
     height: 100.98px;
@@ -136,18 +138,18 @@
 .body__cloud-layer__cloud26 {
     z-index: 100;
     position: absolute;
-    margin-left: 700px;
-    margin-top: -160px;
+    margin-left: 1120px;
+    margin-top: -150px;
 
     width: 187.74px;
     height: 100.98px;
     background-image: url('/resources/images/cloud_PNG6-26.png');
 }
 .body__cloud-layer__cloud27 {
-    z-index: 100;
+    z-index: 90;
     position: absolute;
-    margin-left: 700px;
-    margin-top: -160px;
+    margin-left: 1214px;
+    margin-top: -170px;
 
     width: 187.74px;
     height: 100.98px;
@@ -156,18 +158,18 @@
 .body__cloud-layer__cloud28 {
     z-index: 100;
     position: absolute;
-    margin-left: 700px;
-    margin-top: -160px;
+    margin-left: 1230px;
+    margin-top: -170px;
 
     width: 187.74px;
     height: 100.98px;
     background-image: url('/resources/images/cloud_PNG6-28.png');
 }
 .body__cloud-layer__cloud29 {
-    z-index: 100;
+    z-index: 90;
     position: absolute;
-    margin-left: 700px;
-    margin-top: -160px;
+    margin-left: 1134px;
+    margin-top: -120px;
 
     width: 187.74px;
     height: 100.98px;
@@ -176,8 +178,8 @@
 .body__cloud-layer__cloud30 {
     z-index: 100;
     position: absolute;
-    margin-left: 700px;
-    margin-top: -160px;
+    margin-left: 1096px;
+    margin-top: -100px;
 
     width: 187.74px;
     height: 100.98px;
