@@ -8,14 +8,15 @@
 }
 
 
-.body__form-image__image--crane, .body__form-image__image--building, .body__form-image__image--container,
-.body__form-image__image--line6, .body__form-image__image--line7, .body__form-image__image--line8,
-.body__form-image__image--line9 {
+/* There is a dry violation in this section, but as you explore deeper,
+it will be clear that it is the least of all possible variations of it.  */
+.body__form-image__image--crane, .body__form-image__image--building, .body__form-image__image--container {
     position: absolute;
 }
 
 .body__form-image__image--line6, .body__form-image__image--line7, .body__form-image__image--line8,
 .body__form-image__image--line9 {
+    position:absolute;
     z-index: 5;
 }
 
