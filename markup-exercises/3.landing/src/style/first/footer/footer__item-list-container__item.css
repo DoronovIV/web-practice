@@ -19,16 +19,13 @@
 }
 
 
-.footer__item-list-container__item__text {
-    margin-top: -40px;
+.footer__item-list-container__item__text, .footer__item-list-container__item__text--letter-spacing--09em {
+    margin-top: -50px;
     font: 400 'Roboto', sans serif;
     font-size: 14px;
     line-height: 22px;
 }
 
-.footer__item-list-container__item__image--clock {
-    width: 32px;
-    height: 32px;
-
-    fill: linear-gradient(51.19deg, #63AFCD 22.46%, #FF374F 111.79%);
+.footer__item-list-container__item__text--letter-spacing--09em {
+    letter-spacing: -0.09em;
 }
