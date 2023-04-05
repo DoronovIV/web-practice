@@ -21,3 +21,20 @@
     background-repeat: no-repeat;
     transform: rotate(180deg);
 }
+
+
+.second-page {
+    position: absolute;
+    z-index: 100;
+    width: 1920px;
+    height: 1080px;
+
+    top: 1500px;
+
+    padding-top: 40px;
+    padding-left: 200px;
+
+
+    background: linear-gradient(199.52deg, #161B22 9.98%, #202E43 70.51%, #0D1725 88.6%);
+}
+
