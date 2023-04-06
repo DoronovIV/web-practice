@@ -15,3 +15,23 @@
     text-transform: uppercase;
     color: #FFFFFF;
 }
+
+
+.body__footer__container {
+    position: absolute;
+    z-index: 190;
+
+    width: 745px;
+    height: 89px;
+}
+
+
+.body__footer__text {
+    margin-left: 380px;
+    margin-top: 540px;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+}
