@@ -51,3 +51,14 @@
     top: 2586px;
 }
 
+.fourth-page {
+    position: absolute;
+    z-index: 250;
+
+    width: 1920px;
+    height: 2459px;
+    left: 0px;
+    top: 3300px;
+
+    background: linear-gradient(199.52deg, #161B22 9.98%, #202E43 70.51%, #0D1725 88.6%);
+}

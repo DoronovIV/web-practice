@@ -1,0 +1,32 @@
+.fourth-page__background--pixels {
+    position: absolute;
+    z-index: 15;
+    width: 1922px;
+    height: 631px;
+
+    background: url('/resources/images/pixels2.png');
+    mix-blend-mode: lighten;
+    box-shadow: inset 0px -128px 113px #000000;
+}
+
+
+.fourth-page__background--mist--top, .fourth-page__background--mist--bot {
+    position: absolute;
+    width: 2000px;
+    height: 1747px;
+    left: 14px;
+
+    background-image: url('/resources/images/mist2.png');
+    background-size: cover;
+}
+
+
+.fourth-page__background--mist--top {
+    z-index: 20;
+}
+
+
+.fourth-page__background--mist--bot {
+    z-index: 21;
+    top: 1547px;
+}
