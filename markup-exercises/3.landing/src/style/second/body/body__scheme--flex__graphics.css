@@ -63,3 +63,38 @@
     margin-left: -3px;
     margin-top: 179px;
 }
+
+
+
+.body__scheme--flex__graphics__line11 {
+    width: 180.27px;
+    height: 0px;
+
+    margin-left: 10px;
+    margin-top: 36px;
+
+    border: 1px solid #FFFFFF;
+    transform: rotate(13.49deg);
+}
+
+.body__scheme--flex__graphics__line10 {
+    width: 206px;
+    height: 0px;
+
+    margin-left: -12px;
+    margin-top: 50px;
+
+    border: 1px solid #FFFFFF;
+    transform: rotate(-16.90deg);
+}
+
+.body__scheme--flex__graphics__line12 {
+    width: 204px;
+    height: 0px;
+
+    margin-left: -12px;
+    margin-top: 124px;
+
+    border: 1px solid #FFFFFF;
+    transform: rotate(17deg);
+}
