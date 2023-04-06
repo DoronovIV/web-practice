@@ -7,21 +7,24 @@
 }
 
 
-
-.body__scheme--flex__graphics__white-ellipse-top, .body__scheme--flex__graphics__white-ellipse-mid, .body__scheme--flex__graphics__white-ellipse-bot {
+.body__scheme--flex__graphics__white-ellipse-top, .body__scheme--flex__graphics__white-ellipse-mid, .body__scheme--flex__graphics__white-ellipse-bot,
+.body__scheme--flex__graphics__red-ellipse-top, .body__scheme--flex__graphics__red-ellipse-mid, .body__scheme--flex__graphics__red-ellipse-bot,
+.body__scheme--flex__graphics__smaller-white-ellipse-top, .body__scheme--flex__graphics__smaller-white-ellipse-bot  {
     position: absolute;
-    z-index: 150;
-
-    width: 30px;
-    height: 30px;
-
-    background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.14);
-
+    
     border: solid transparent;
     border-radius: 50%;
+}
 
-    
+
+
+/*  picture larger white ellipses  */
+.body__scheme--flex__graphics__white-ellipse-top, .body__scheme--flex__graphics__white-ellipse-mid, .body__scheme--flex__graphics__white-ellipse-bot {
+    z-index: 150;
+    width: 30px;
+    height: 30px;
+    background: #FFFFFF;
 }
 
 .body__scheme--flex__graphics__white-ellipse-mid {
@@ -36,21 +39,14 @@
 
 
 
+/*  picture smaller red ellipses inside larger white ones  */
 .body__scheme--flex__graphics__red-ellipse-top, .body__scheme--flex__graphics__red-ellipse-mid, .body__scheme--flex__graphics__red-ellipse-bot {
-    position: absolute;
     z-index: 160;
-
     margin-left: 9px;
     margin-top: 9px;
-
     width: 11px;
     height: 11px;
-
     background: #FF374F;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.14);
-
-    border: solid transparent;
-    border-radius: 50%;
 }
 
 .body__scheme--flex__graphics__red-ellipse-mid {
@@ -66,35 +62,55 @@
 
 
 
+/*  white lines that point from picture to text  */
+.body__scheme--flex__graphics__line10, .body__scheme--flex__graphics__line11, .body__scheme--flex__graphics__line12 {
+    height: 0px;
+    border: 1px solid #FFFFFF;
+}
+
 .body__scheme--flex__graphics__line11 {
     width: 180.27px;
-    height: 0px;
 
     margin-left: 10px;
     margin-top: 36px;
 
-    border: 1px solid #FFFFFF;
     transform: rotate(13.49deg);
 }
 
 .body__scheme--flex__graphics__line10 {
     width: 206px;
-    height: 0px;
 
     margin-left: -12px;
     margin-top: 50px;
 
-    border: 1px solid #FFFFFF;
     transform: rotate(-16.90deg);
 }
 
 .body__scheme--flex__graphics__line12 {
     width: 204px;
-    height: 0px;
 
     margin-left: -12px;
     margin-top: 124px;
 
-    border: 1px solid #FFFFFF;
     transform: rotate(17deg);
+}
+
+
+
+/*  text smaller white ellipses   */
+.body__scheme--flex__graphics__smaller-white-ellipse-top, .body__scheme--flex__graphics__smaller-white-ellipse-bot {
+    z-index: 170;
+    width: 3px;
+    height: 3px;
+    background: #FFFFFF;
+}
+
+.body__scheme--flex__graphics__smaller-white-ellipse-top {
+    margin-left: 187px;
+    margin-top: -161px;
+}
+
+.body__scheme--flex__graphics__smaller-white-ellipse-bot {
+    margin-left: 187px;
+    margin-top: 25.5px;
 }
