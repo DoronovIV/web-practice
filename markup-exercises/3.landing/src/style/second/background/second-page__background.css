@@ -1,0 +1,22 @@
+.second-page__background__pixels {
+    position: absolute;
+    z-index: 15;
+    width: 1922px;
+    height: 631px;
+
+    background: url('/resources/images/pixels2.png');
+    mix-blend-mode: lighten;
+    box-shadow: inset 0px -128px 113px #000000;
+}
+
+
+.second-page__background__mist {
+    position: absolute;
+    z-index: 20;
+    width: 2000px;
+    height: 1747px;
+    left: 14px;
+
+
+    background-image: url('/resources/images/mist2.png');
+}

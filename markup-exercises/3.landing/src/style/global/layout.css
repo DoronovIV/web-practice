@@ -1,9 +1,14 @@
+.page-content {
+    padding-top: 40px;
+    padding-left: 200px;
+}
+
+
 .first-page {
     width: 1920px;
     height: 1080px;
 
-    padding-top: 40px;
-    padding-left: 200px;
+
 
     background-image: url('/resources/images/sky.jpeg');
     background-repeat: no-repeat;
@@ -26,13 +31,10 @@
 .second-page {
     position: absolute;
     z-index: 100;
-    width: 1920px;
-    height: 1080px;
 
     top: 1500px;
-
-    padding-top: 40px;
-    padding-left: 200px;
+    width: 1920px;
+    height: 1080px;
 
 
     background: linear-gradient(199.52deg, #161B22 9.98%, #202E43 70.51%, #0D1725 88.6%);
