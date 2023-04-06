@@ -1,4 +1,4 @@
-.body__scheme--flex {
+.second-page__body__scheme--flex {
     position:absolute;
     z-index: 100;
 
@@ -10,7 +10,7 @@
 }
 
 
-.body__scheme--flex__picture-site {
+.second-page__body__scheme--flex__picture-site {
     width: 647px;
     height: 497px;
 
@@ -18,23 +18,23 @@
 }
 
 
-.body__scheme--flex__text-site {
+.second-page__body__scheme--flex__text-site {
     margin-top: 110px;
     margin-left: 100px;
     width: 745px;
 }
 
-.body__scheme--flex__text-site__header-paragraph-container {
+.second-page__body__scheme--flex__text-site__header-paragraph-container {
     margin-top: 40px;
 }
 
 
-.body__scheme--flex__text-site__header, .body__scheme--flex__text-site__paragraph {
+.second-page__body__scheme--flex__text-site__header, .second-page__body__scheme--flex__text-site__paragraph {
     line-height: 22px;
     color: #FFFFFF;
 }
 
-.body__scheme--flex__text-site__header {
+.second-page__body__scheme--flex__text-site__header {
     margin-bottom: 36px;
     font-weight: 700;
     font-size: 20px;
@@ -42,7 +42,7 @@
 }
 
 
-.body__scheme--flex__text-site__paragraph {
+.second-page__body__scheme--flex__text-site__paragraph {
     font-weight: 400;
     font-size: 14px;
 }

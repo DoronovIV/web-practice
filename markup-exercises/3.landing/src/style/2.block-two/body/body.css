@@ -1,10 +1,10 @@
-.second-body {
+.second-page__body {
     margin-top: 40px;
     margin-bottom: 100px;
     margin-left: -200px;
 }
 
-.body__center-label {
+.second-page__body__center-label {
     font-weight: 400;
     text-align: center;
     font-size: 42px;
@@ -17,7 +17,7 @@
 }
 
 
-.body__footer__container {
+.second-page__body__footer__container {
     position: absolute;
     z-index: 190;
 
@@ -26,7 +26,7 @@
 }
 
 
-.body__footer__text {
+.second-page__body__footer__text {
     margin-left: 380px;
     margin-top: 540px;
 

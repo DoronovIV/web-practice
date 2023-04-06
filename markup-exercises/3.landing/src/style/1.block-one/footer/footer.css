@@ -1,6 +1,7 @@
 .footer {
     position: absolute;
     z-index: 200;
+    
     margin-top: -10px;
 }
 
@@ -8,7 +9,6 @@
 .footer__item-list-container {
     display: flex;
     flex-direction: row;
-
     flex-wrap: wrap;
     gap: 20px;
 

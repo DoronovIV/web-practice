@@ -1,4 +1,4 @@
-.body__scheme--flex__graphics {
+.second-page__body__scheme--flex__graphics {
     position: absolute;
     z-index: 150;
 
@@ -7,9 +7,10 @@
 }
 
 
-.body__scheme--flex__graphics__white-ellipse-top, .body__scheme--flex__graphics__white-ellipse-mid, .body__scheme--flex__graphics__white-ellipse-bot,
-.body__scheme--flex__graphics__red-ellipse-top, .body__scheme--flex__graphics__red-ellipse-mid, .body__scheme--flex__graphics__red-ellipse-bot,
-.body__scheme--flex__graphics__smaller-white-ellipse-top, .body__scheme--flex__graphics__smaller-white-ellipse-bot  {
+.second-page__body__scheme--flex__graphics__white-ellipse-top, .second-page__body__scheme--flex__graphics__white-ellipse-mid, 
+.second-page__body__scheme--flex__graphics__white-ellipse-bot,.second-page__body__scheme--flex__graphics__red-ellipse-top,
+.second-page__body__scheme--flex__graphics__red-ellipse-mid, .second-page__body__scheme--flex__graphics__red-ellipse-bot,
+.second-page__body__scheme--flex__graphics__smaller-white-ellipse-top, .second-page__body__scheme--flex__graphics__smaller-white-ellipse-bot  {
     position: absolute;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.14);
     
@@ -20,19 +21,20 @@
 
 
 /*  picture larger white ellipses  */
-.body__scheme--flex__graphics__white-ellipse-top, .body__scheme--flex__graphics__white-ellipse-mid, .body__scheme--flex__graphics__white-ellipse-bot {
+.second-page__body__scheme--flex__graphics__white-ellipse-top, .second-page__body__scheme--flex__graphics__white-ellipse-mid, 
+.second-page__body__scheme--flex__graphics__white-ellipse-bot {
     z-index: 150;
     width: 30px;
     height: 30px;
     background: #FFFFFF;
 }
 
-.body__scheme--flex__graphics__white-ellipse-mid {
+.second-page__body__scheme--flex__graphics__white-ellipse-mid {
     margin-left: -30px;
     margin-top: 100px;
 }
 
-.body__scheme--flex__graphics__white-ellipse-bot {
+.second-page__body__scheme--flex__graphics__white-ellipse-bot {
     margin-left: -12px;
     margin-top: 170px;
 }
@@ -40,7 +42,8 @@
 
 
 /*  picture smaller red ellipses inside larger white ones  */
-.body__scheme--flex__graphics__red-ellipse-top, .body__scheme--flex__graphics__red-ellipse-mid, .body__scheme--flex__graphics__red-ellipse-bot {
+.second-page__body__scheme--flex__graphics__red-ellipse-top, .second-page__body__scheme--flex__graphics__red-ellipse-mid,
+.second-page__body__scheme--flex__graphics__red-ellipse-bot {
     z-index: 160;
     margin-left: 9px;
     margin-top: 9px;
@@ -49,13 +52,13 @@
     background: #FF374F;
 }
 
-.body__scheme--flex__graphics__red-ellipse-mid {
+.second-page__body__scheme--flex__graphics__red-ellipse-mid {
     margin-left: -21px;
     margin-top: 109px;
 }
 
 
-.body__scheme--flex__graphics__red-ellipse-bot {
+.second-page__body__scheme--flex__graphics__red-ellipse-bot {
     margin-left: -3px;
     margin-top: 179px;
 }
@@ -63,12 +66,13 @@
 
 
 /*  white lines that point from picture to text  */
-.body__scheme--flex__graphics__line10, .body__scheme--flex__graphics__line11, .body__scheme--flex__graphics__line12 {
+.second-page__body__scheme--flex__graphics__line10, .second-page__body__scheme--flex__graphics__line11,
+.second-page__body__scheme--flex__graphics__line12 {
     height: 0px;
     border: 1px solid #FFFFFF;
 }
 
-.body__scheme--flex__graphics__line11 {
+.second-page__body__scheme--flex__graphics__line11 {
     width: 180.27px;
 
     margin-left: 10px;
@@ -77,7 +81,7 @@
     transform: rotate(13.49deg);
 }
 
-.body__scheme--flex__graphics__line10 {
+.second-page__body__scheme--flex__graphics__line10 {
     width: 206px;
 
     margin-left: -12px;
@@ -86,7 +90,7 @@
     transform: rotate(-16.90deg);
 }
 
-.body__scheme--flex__graphics__line12 {
+.second-page__body__scheme--flex__graphics__line12 {
     width: 204px;
 
     margin-left: -12px;
@@ -98,26 +102,26 @@
 
 
 /*  text smaller white ellipses   */
-.body__scheme--flex__graphics__smaller-white-ellipse-top, .body__scheme--flex__graphics__smaller-white-ellipse-bot {
+.second-page__body__scheme--flex__graphics__smaller-white-ellipse-top, .second-page__body__scheme--flex__graphics__smaller-white-ellipse-bot {
     z-index: 170;
     width: 3px;
     height: 3px;
     background: #FFFFFF;
 }
 
-.body__scheme--flex__graphics__smaller-white-ellipse-top {
+.second-page__body__scheme--flex__graphics__smaller-white-ellipse-top {
     margin-left: 187px;
     margin-top: -161px;
 }
 
-.body__scheme--flex__graphics__smaller-white-ellipse-bot {
+.second-page__body__scheme--flex__graphics__smaller-white-ellipse-bot {
     margin-left: 187px;
     margin-top: 25.5px;
 }
 
 
 /*  picture width line  */
-.body__scheme--flex__graphics__width__line {
+.second-page__body__scheme--flex__graphics__width__line {
     width: 123px;
     height: 0px;
 
@@ -130,28 +134,29 @@
     
 }
 
-.body__scheme--flex__graphics__width__vector-left, .body__scheme--flex__graphics__width__vector-right, .body__scheme--flex__graphics__width__label__container {
+.second-page__body__scheme--flex__graphics__width__vector-left, .second-page__body__scheme--flex__graphics__width__vector-right,
+.second-page__body__scheme--flex__graphics__width__label__container {
     position: absolute;
     z-index: 170;
 }
 
-.body__scheme--flex__graphics__width__vector-left {
+.second-page__body__scheme--flex__graphics__width__vector-left {
     margin-left: -24px;
     margin-top: -8px;
 }
 
-.body__scheme--flex__graphics__width__vector-right {
+.second-page__body__scheme--flex__graphics__width__vector-right {
     margin-left: 20px;
     margin-top: -8px;
     transform: rotate(180deg);
 }
 
-.body__scheme--flex__graphics__width__label__container {
+.second-page__body__scheme--flex__graphics__width__label__container {
     margin-left: -9px;
     margin-top: -24px;
 }
 
-.body__scheme--flex__graphics__width__label__text {
+.second-page__body__scheme--flex__graphics__width__label__text {
     font-size: 11px;
     font-weight: 800;
     line-height: 22px;
