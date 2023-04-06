@@ -1,0 +1,77 @@
+.body {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+.body__label {
+    margin-left: -20px;
+
+    font-size: 42px;
+    line-height: 60px;
+    text-align: center;
+    font-weight: 300;
+
+    text-transform: uppercase;
+}
+
+
+.body__item-collection--flex {
+    display: flex;
+    gap: 20px;
+
+    margin-left: 20px;
+    margin-top: 100px;
+}
+
+.body__item-collection--flex__item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    justify-content: center;
+    align-content: center;
+}
+
+
+.body__item-collection--flex__item__box {
+    width: 363px;
+    height: 253px;
+    border-radius: 30px;
+}
+
+.body__item-collection--flex__item__label {
+    text-align: center;
+    font-weight: 600;
+}
+
+
+
+.body__item-collection--flex__item__box--office {
+    width: 363px;
+    height: 253px;
+    border-radius: 30px;
+    background-image: url('/resources/images/office.png');
+}
+
+.body__item-collection--flex__item__box--pool {
+    width: 363px;
+    height: 253px;
+    border-radius: 30px;
+    background-image: url('/resources/images/pool.png');
+}
+
+.body__item-collection--flex__item__box--mountains {
+    width: 363px;
+    height: 253px;
+    border-radius: 30px;
+    background-image: url('/resources/images/mountains.png');
+}
+
+.body__item-collection--flex__item__box--mall {
+    width: 363px;
+    height: 253px;
+    border-radius: 30px;
+    background-image: url('/resources/images/mall.png');
+}
+

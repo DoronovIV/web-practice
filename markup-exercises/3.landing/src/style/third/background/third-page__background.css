@@ -1,0 +1,10 @@
+.third-page__background {
+    position: absolute;
+    z-index: 100;
+
+    width: 1920px;
+    height: 1080px;
+
+
+    background: url('/resources/images/background3.png');
+}
