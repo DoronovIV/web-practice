@@ -72,6 +72,9 @@
 
     transform: rotate(-90deg);
     border: 1px solid #728095;
+
+    border-top-width: 1px;
+    border-bottom-width: 0px;
 }
 
 .body__form-image__form__ellipse-label {
