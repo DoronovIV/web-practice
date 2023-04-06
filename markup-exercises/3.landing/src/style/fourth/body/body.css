@@ -156,6 +156,92 @@
     width: 100%;
     height: 100%;
 
-    left: 190px;
-    top: 1440px;
+    left: 560px;
+    top: 1500px;
 }
+
+
+.fourth-body__footer__monstrous__middleground__transparent-ellipse {
+    position: absolute;
+    z-index: 50;
+
+    width: 811px;
+    height: 811px;
+
+    border-radius: 50%;
+    background: #FFFFFF;
+    opacity: 0.1;
+}
+
+
+.fourth-body__footer__monstrous__middleground__solid-ellipse {
+    position: absolute;
+    z-index: 60;
+
+    margin-left: 71px;
+    margin-top: 71px;
+
+    width: 669px;
+    height: 669px;
+
+    border-radius: 50%;
+    background: #FFFFFF;
+}
+
+
+.fourth-body__footer__monstrous__foreground__ellipse {
+    position: absolute;
+    z-index: 70;
+    box-sizing: border-box;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+
+    padding: 50px;
+    margin-left: 93px;
+    margin-top: 93px;
+
+    position: absolute;
+    width: 627px;
+    height: 627px;
+
+    border-radius: 50%;
+    background: #FFFFFF;
+    background-image: url('/resources/images/stuff4.png');
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: 0px 9px 20px rgba(73, 93, 124, 0.19);
+}
+
+
+.fourth-body__footer__monstrous__foreground__ellipse__label {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 60px;
+
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+
+.fourth-body__footer__monstrous__foreground__ellipse__button {
+    width: 306px;
+    height: 70px;
+
+    background: #FF374F;
+
+    border: none;
+    border-radius: 35px;
+
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+}
+
+
