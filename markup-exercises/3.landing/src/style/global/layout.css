@@ -1,4 +1,4 @@
-.page-content {
+.block-content {
     position: absolute;
     z-index: 1000;
     padding-top: 40px;
@@ -6,7 +6,7 @@
 }
 
 
-.first-page {
+.block-one {
     width: 1920px;
     height: 1080px;
 
@@ -14,7 +14,7 @@
     background-repeat: no-repeat;
 }
 
-.first-page-extension {
+.block-one-extension {
     position: absolute;
     width: 1920px;
     height: 1080px;
@@ -27,7 +27,7 @@
 }
 
 
-.second-page {
+.block-two {
     position: absolute;
     z-index: 100;
 
@@ -39,7 +39,7 @@
 }
 
 
-.third-page {
+.block-three {
     position: absolute;
     z-index: 200;
 
@@ -48,7 +48,7 @@
     top: 2586px;
 }
 
-.fourth-page {
+.block-four {
     position: absolute;
     z-index: 250;
 
@@ -61,7 +61,7 @@
 }
 
 
-.fifth-page {
+.block-five {
     position: absolute;
     z-index: 300;
 
