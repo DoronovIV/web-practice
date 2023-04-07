@@ -1,9 +1,9 @@
-fifth-body {
+.block-five__body {
 
 }
 
 
-.fifth-body__label {
+.block-five__body__label {
     width: 1517px;
 
     font-size: 42px;
@@ -14,7 +14,7 @@ fifth-body {
 }
 
 
-.fifth-body__box-collection--flex {
+.block-five__body__box-collection--flex {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -25,7 +25,7 @@ fifth-body {
     width: 1820px;
 }
 
-.fifth-body__box-collection--flex__item {
+.block-five__body__box-collection--flex__item {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -43,7 +43,7 @@ fifth-body {
 }
 
 
-.fifth-body__box-collection--flex__item__label {
+.block-five__body__box-collection--flex__item__label {
     margin-top: 20px;
 
     font-size: 14px;
@@ -53,12 +53,12 @@ fifth-body {
 
 
 
-.fifth-body__footer {
+.block-five__body__footer {
     margin-left: 560px;
     margin-top: 60px;
 }
 
-.fifth-body__footer__label {
+.block-five__body__footer__label {
     font-weight: 300;
     font-size: 26px;
     line-height: 34px;
