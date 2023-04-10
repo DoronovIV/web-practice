@@ -1,0 +1,28 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.container {
+    margin: 0 auto;
+    margin-top: 90px;
+
+    padding-left: 80px;
+    padding-top: 40px;
+
+    min-width: 1366px;
+    min-height: 768px;
+
+    max-width: 1366px;
+    max-height: 768px;
+
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: linear-gradient(#e66465, #9198e5);
+}
+
+.input-container {
+    position: relative;
+}
