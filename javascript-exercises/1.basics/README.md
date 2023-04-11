@@ -1,5 +1,4 @@
 # Basics
-This is the initial JavaScript project folder.  
+This directory contains the first set of exercises. It goes from 1.1 to 2.6 sections.
 ---
-<br />
-You can see the objective at the project root folder.
+source: [e-book](https://javascript.info)
