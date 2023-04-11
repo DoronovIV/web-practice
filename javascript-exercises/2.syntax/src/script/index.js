@@ -31,4 +31,4 @@ import { showLoopValues } from './4.loops/loops.js';
 
 // let taskFour = fixAddition();
 // let taskFive = makeComparisons();
-let taskWhoKnowsWhat = checkForEmptiness();
+let taskWhoKnowsWhat = showLoopValues();
