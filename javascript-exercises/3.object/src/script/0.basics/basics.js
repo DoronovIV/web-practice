@@ -31,3 +31,31 @@ export function checkEmptiness() {
 function isEmpty(obj) {
    return Object.keys(obj).length === 0;
 }
+
+export function sumObjectProperties() {
+   let salaries = {
+      John: 100,
+      Ann: 160,
+      Pete: 130,
+   };
+
+   let totalSum = 0;
+
+   for (let property in salaries) {
+      totalSum += salaries[property];
+   }
+}
+
+export function multiplyPropertyByTwo() {
+   let menu = {
+      width: 200,
+      height: 300,
+      title: 'My menu',
+   };
+
+   for (let property in menu) {
+      if (typeof obj[property] == 'number') {
+         menu[property] *= 2;
+      }
+   }
+}
