@@ -61,3 +61,18 @@ export function makeNewCalculator() {
    alert('Sum = ' + calculator.sum());
    alert('Mul = ' + calculator.mul());
 }
+
+export function makeNewAccumulator() {
+   function Accumulator(initialValue) {
+      this.value = initialValue;
+
+      this.read = function () {
+         this.value += +prompt('Please specify a value to be accumulated', 0);
+      };
+   }
+
+   let accumulator = new Accumulator(1);
+   accumulator.read();
+   accumulator.read();
+   alert(accumulator.value);
+}
