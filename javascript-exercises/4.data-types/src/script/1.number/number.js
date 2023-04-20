@@ -1,60 +1,80 @@
 `use strict`;
 
 export function addTwoNumbers() {
-   // addition sign before `prompt` automatically converts it to number;
+    // addition sign before `prompt` automatically converts it to number;
 
-   let firstNumber = +prompt('> First number', '0');
-   let secondNumber = +prompt('> Second number', '0');
+    let firstNumber = +prompt('> First number', '0');
+    let secondNumber = +prompt('> Second number', '0');
 
-   alert(firstNumber + secondNumber);
+    alert(firstNumber + secondNumber);
 }
 
 export function roundDecimalNumber() {
-   // the result is written in the comments;
-   // as you can see, there's a precision loss;
-   // they suggest next solution:
-   // see (*)
-   // I would like to find something more appropriate;
+    // the result is written in the comments;
+    // as you can see, there's a precision loss;
+    // they suggest next solution:
+    // see (*)
+    // I would like to find something more appropriate;
 
-   // The Internet suggests using `decimal` datatype;
-   // I would like to stick to that idea as it seems mature enough to me;
-   // however, there might be problem with memory at some point,
-   // but that is still not "iron" and will demand different kind of skills.
+    // The Internet suggests using `decimal` datatype;
+    // I would like to stick to that idea as it seems mature enough to me;
+    // however, there might be problem with memory at some point,
+    // but that is still not "iron" and will demand different kind of skills.
 
-   // UPD: decimal number lies in some ridiculous remote library;
-   // so that crap is seriously considered as a solution :\
+    // UPD: decimal number lies in some ridiculous remote library;
+    // so that crap is seriously considered as a solution :\
 
-   const firstNumber = 1.35;
-   const secondNumber = 6.35;
+    const firstNumber = 1.35;
+    const secondNumber = 6.35;
 
-   alert(`Before: ${firstNumber.toFixed(1)}`); // 1.4
-   alert(`Before: ${secondNumber.toFixed(1)}`); // 6.3
+    alert(`Before: ${firstNumber.toFixed(1)}`); // 1.4
+    alert(`Before: ${secondNumber.toFixed(1)}`); // 6.3
 
-   // alert( Math.round(6.35 * 10) / 10 ); // (*)
+    // alert( Math.round(6.35 * 10) / 10 ); // (*)
 
-   const fixedFirstNumber = Math.round(firstNumber * 10) / 10;
-   const fixedSecondNumber = Math.round(secondNumber * 10) / 10;
+    const fixedFirstNumber = Math.round(firstNumber * 10) / 10;
+    const fixedSecondNumber = Math.round(secondNumber * 10) / 10;
 
-   alert(`After: ${fixedFirstNumber.toFixed(1)}`); // 1.4
-   alert(`After: ${fixedSecondNumber.toFixed(1)}`); // 6.4
+    alert(`After: ${fixedFirstNumber.toFixed(1)}`); // 1.4
+    alert(`After: ${fixedSecondNumber.toFixed(1)}`); // 6.4
 }
 
 export function manageFiniteNumberInput() {
-   alert(readFiniteNumber());
+    alert(readFiniteNumber());
 }
 
 function readFiniteNumber() {
-   // yep, I really just copied answer, remade and refactored it and tested out;
-   // works fine, as intended.
-   let number;
+    // yep, I really just copied answer, remade and refactored it and tested out;
+    // works fine, as intended.
+    let number;
 
-   do {
-      number = prompt('Please, enter a finite number', 0);
-   } while (!isFinite(number));
+    do {
+        number = prompt('Please, enter a finite number', 0);
+    } while (!isFinite(number));
 
-   // typically, I do not fancy ternary, but here is the case, I believe,
-   // where it just fits natural;
-   number = number ? +number : null; // if `truthy` convert to number, else nullify it;
+    // typically, I do not fancy ternary, but here is the case, I believe,
+    // where it just fits natural;
+    number = number ? +number : null; // if `truthy` convert to number, else nullify it;
 
-   return number;
+    return number;
+}
+
+export function makeInfiniteLoop() {
+    // that is really stupid;
+    // I normally avoid strict equality;
+    // when working with numbers;
+
+    let i = 0;
+    while (i <= 10) {
+        i += 0.2;
+    }
+}
+
+export function makeRandomNumber(min, max) {
+    return min + Math.random() * (max - min);
+}
+
+export function makeRandomPreciseNumber(min, max) {
+    let rand = min + Math.random() * (max + 1 - min);
+    return Math.floor(rand);
 }
