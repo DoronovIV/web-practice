@@ -14,6 +14,9 @@ import { extractCurrencyValue } from './2.strings/strings.js';
 import { makeArrayOperations } from './3.arrays/arrays.js';
 import { getMaxSubarraySum } from './3.arrays/arrays.js';
 
+import { camelize } from './4.array-methods/array-methods.js';
+import { filterRange } from './4.array-methods/array-methods.js';
+
 // let taskZero = showMethodsDemo();
 
 // let taskOne = roundDecimalNumber();
@@ -28,3 +31,6 @@ import { getMaxSubarraySum } from './3.arrays/arrays.js';
 // let taskNine = alert(extractCurrencyValue('$999'));
 
 //let taskEleven = alert(getMaxSubarraySum([0, 1, -2, 3, 4, -5])); // 7;
+
+// let taskThirteen = alert(camelize('computer-science-learning'));
+// let taskFourteen = alert(filterRange([1, 2, 3, 4, 5], 2, 4));
