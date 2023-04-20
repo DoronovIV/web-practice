@@ -11,7 +11,11 @@ import { checkForSpam } from './2.strings/strings.js';
 import { truncate } from './2.strings/strings.js';
 import { extractCurrencyValue } from './2.strings/strings.js';
 
+import { makeArrayOperations } from './3.arrays/arrays.js';
+import { getMaxSubarraySum } from './3.arrays/arrays.js';
+
 // let taskZero = showMethodsDemo();
+
 // let taskOne = roundDecimalNumber();
 // let taskTwo = manageFiniteNumberInput();
 // let taskThree = makeInfiniteLoop();
@@ -21,4 +25,6 @@ import { extractCurrencyValue } from './2.strings/strings.js';
 // let taskSix = alert(uppercaseFirstCharacter('5null'));
 // let taskSeven = alert([checkForSpam('normal'), checkForSpam('viagraxxx')]);
 // let taskEight = alert(truncate('ten symbols', 10));
-// let taskNine = alert(extractCurrencyValue('$999'))  ;
+// let taskNine = alert(extractCurrencyValue('$999'));
+
+//let taskEleven = alert(getMaxSubarraySum([0, 1, -2, 3, 4, -5])); // 7;
