@@ -14,10 +14,11 @@ export function makeClosureTest() {
     // 10 of 10s? no, either this crap is working the opposite,
     // or I have just screw something in the code.
     let actions = [];
-    for (let i = 0; i < 10; ++i) {
-        actions.push(() => {
-            return alert(i);
-        });
+    for (let i = 0; i < 10; i++) {
+        let func = function () {
+            alert(i);
+        };
+        actions.push(func);
     }
 
     // I tested it two ways:
@@ -27,10 +28,28 @@ export function makeClosureTest() {
     // }
 
     doForeignScopeClosureTest(actions);
+
+    // so, the thing was that js considers loop variable declaration as a scope-owned;
+    // thus, it was copied all the way;
+    // guess someone will have to get used to that feature ;)
+    makeTenDozens();
 }
 
 function doForeignScopeClosureTest(actionList) {
     for (let a of actionList) {
         a();
     }
+}
+
+function makeTenDozens() {
+    let actions = [];
+    let i = 0;
+    for (; i < 10; i++) {
+        let func = function () {
+            alert(i);
+        };
+        actions.push(func);
+    }
+
+    doForeignScopeClosureTest(actions);
 }
