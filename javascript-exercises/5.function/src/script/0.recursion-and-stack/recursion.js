@@ -18,3 +18,7 @@ function recursiveSumTo(n) {
 function formulaSumTo(n) {
     return (n * (n + 1)) / 2;
 }
+
+export function factorial(n) {
+    return n !== 1 ? n * factorial(n - 1) : 1;
+}
