@@ -20,5 +20,42 @@ function formulaSumTo(n) {
 }
 
 export function factorial(n) {
-    return n !== 1 ? n * factorial(n - 1) : 1;
+    return n >= 1 ? n * factorial(n - 1) : 1;
+}
+
+export function fibonacci(n) {
+    return n <= 1 ? n : fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+export function makePrintList() {
+    let list = {
+        value: 1,
+        next: {
+            value: 2,
+            next: {
+                value: 3,
+                next: {
+                    value: 4,
+                },
+            },
+        },
+    };
+
+    printReverseList(list);
+}
+
+function printList(list) {
+    alert(list.value);
+
+    if (list.next) {
+        printList(list.next);
+    }
+}
+
+function printReverseList(list) {
+    if (list.next) {
+        printReverseList(list.next);
+    }
+
+    alert(list.value);
 }
