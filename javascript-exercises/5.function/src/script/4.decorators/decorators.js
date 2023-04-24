@@ -36,3 +36,61 @@ function delay(f, ms) {
         setTimeout(() => f.apply(this, arguments), ms);
     };
 }
+
+export function makeDebounce() {
+    let func = debounce(alert, 1000);
+
+    func('a');
+
+    setTimeout(() => func('b'), 200);
+    setTimeout(() => func('c'), 500);
+}
+
+function debounce(func, ms) {
+    let timeout;
+
+    return function () {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => {
+            return func.apply(this, arguments);
+        }, ms);
+    };
+}
+
+export function makeThrottling() {
+    function func(arg) {
+        console.log(arg);
+    }
+
+    let f1000 = throttle(func, 1000);
+
+    f1000(1);
+    f1000(2);
+    f1000(3);
+}
+
+function throttle(func, ms) {
+    let isThrottled = false;
+    let savedArgs, savedThis;
+
+    function wrapper() {
+        if (isThrottled) {
+            savedArgs = arguments;
+            savedThis = this;
+            return;
+        }
+        isThrottled = true;
+
+        func.apply(this, arguments);
+
+        setTimeout(function () {
+            isThrottled = false;
+            if (savedArgs) {
+                wrapper.apply(savedThis, savedArgs);
+                savedArgs = savedThis = null;
+            }
+        }, ms);
+    }
+
+    return wrapper;
+}

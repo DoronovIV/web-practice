@@ -20,6 +20,11 @@ import { makeSetTimeoutAlert } from './3.scheduling/scheduling.js';
 
 import { makeEspionage } from './4.decorators/decorators.js';
 import { makeDelay } from './4.decorators/decorators.js';
+import { makeDebounce } from './4.decorators/decorators.js';
+import { makeThrottling } from './4.decorators/decorators.js';
+
+import { makeFix } from './5.binding/binding.js';
+import { makeFixPartial } from './5.binding/binding.js';
 
 // let taskZero = alert(calculateSum(10));
 // let taskOne = alert(factorial(5));
@@ -41,5 +46,10 @@ import { makeDelay } from './4.decorators/decorators.js';
 // let taskThirteen = printNumbers(1, 3);
 // let taskFourteen = makeSetTimeoutAlert();
 
-//let taskFifteen = makeEspionage();
-let taskSixteen = makeDelay();
+// let taskFifteen = makeEspionage();
+// let taskSixteen = makeDelay();
+// let taskSeventeen = makeDebounce();
+// let taskEighteen = makeThrottling();
+
+// let taskNineteen = makeFix();
+// let taskTwenty = makeFixPartial();
