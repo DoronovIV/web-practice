@@ -1,3 +1,5 @@
+`use strict`;
+
 export function calculateSum(n) {
     return formulaSumTo(n); // the fastest one, obviously;
 }
