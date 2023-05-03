@@ -3,7 +3,12 @@ html, body {
     padding: 0;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 .page-content {
-    width: 1920;
+    width: 1905;
     height: 1080;
+    background-color: rgb(240,240,240);
 }

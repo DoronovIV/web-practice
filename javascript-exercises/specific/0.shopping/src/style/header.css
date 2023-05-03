@@ -10,6 +10,42 @@
 }
 
 .page-content__header__meta {
-    height: 40px;
+    height: 36px;
     background-color: #333;
+}
+
+.page-content__header__content {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-left: 100px;
+    padding-right: 100px;
+
+    height: 120px;
+    background-color: white;
+}
+
+
+
+
+.page-content__header__content__logo, .page-content__header__content__cart-icon {
+    background-color: transparent;
+    background-size: contain;
+
+    cursor: pointer;
+}
+
+.page-content__header__content__cart-icon {
+    width: 32px;
+    height: 32px;
+
+    background-image: url('/resources/cart.svg');
+}
+
+.page-content__header__content__logo {
+    width: 144px;
+    height: 144px;
+
+    background-image: url('/resources/logo.svg');
 }
