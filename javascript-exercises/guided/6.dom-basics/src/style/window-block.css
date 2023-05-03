@@ -1,0 +1,60 @@
+.window-overlay--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1905px;
+    height: 1080px;
+    background: rgba(40, 40, 40, 0.8);
+}
+
+
+.window-block {
+    position: relative;
+
+    width: 900px;
+    height: auto;
+
+    margin: 0 auto;
+    padding: 36px;
+
+    border-radius: 14px;
+    background-color: white;
+}
+
+
+.window-block__paragraph {
+    margin: 0 auto;
+    margin-top: 40px;
+
+    width: 80%;
+    text-align: left;
+
+    color: dimgrey;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+.window-block__button {
+    display:block;
+    width: 240px;
+    height: 56px;
+
+    margin: 0 auto;
+    margin-top: 36px;
+
+    border: solid dimgrey 1px;
+    border-radius: 8px;
+
+    font-size: 18px;
+    text-transform: uppercase;
+
+    cursor: pointer;
+    color: dimgrey;
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
