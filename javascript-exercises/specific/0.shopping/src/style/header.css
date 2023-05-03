@@ -4,11 +4,6 @@
     width: 100%;
 }
 
-.page-content__header > {
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
 .page-content__header__meta {
     height: 36px;
     background-color: #333;
@@ -19,8 +14,8 @@
     justify-content: space-between;
     align-items: center;
 
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
 
     height: 120px;
     background-color: white;
