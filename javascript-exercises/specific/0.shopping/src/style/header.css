@@ -1,0 +1,15 @@
+.page-content__header {
+    position: sticky;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.page-content__header > {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.page-content__header__meta {
+    height: 40px;
+    background-color: #333;
+}
