@@ -1,0 +1,16 @@
+.field {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+.field__button-container {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.field__button-container__agile-button {
+    width: 100px;
+    height: 40px;
+}
