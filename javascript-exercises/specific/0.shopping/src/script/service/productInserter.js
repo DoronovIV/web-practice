@@ -1,5 +1,6 @@
 import { Toolbox } from '../tools/toolbox.js';
 import { Product } from '../product/product.js';
+import { ProductManager } from './productManager.js';
 
 export class ProductInserter {
     constructor(productsDiv, cartManager) {
@@ -28,8 +29,10 @@ export class ProductInserter {
         // creating controls and adding 'onclick' event;
         let productControls = this._toolbox._createElementOfClass('div');
         productControls.innerHTML = this._controls.innerHTML;
-        productControls.children[0].addEventListener('click', () => {
+        let manager = new ProductManager(productControls.children[0]);
+        productControls.children[0].addEventListener('click', (event) => {
             this._cartManager.addProduct(prod);
+            manager.disableAddButton();
         });
 
         // appending sub-elements;
@@ -41,10 +44,6 @@ export class ProductInserter {
 
         // appending the new element itself;
         this._productsDiv.appendChild(productDiv);
-    }
-
-    _getNewProductSlot() {
-        return prodsDiv;
     }
 
     _getProductList() {

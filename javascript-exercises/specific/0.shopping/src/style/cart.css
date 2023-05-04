@@ -40,3 +40,44 @@
 .page-content__header__cart-window__product-list__empty-label {
     font-size: 22px;
 }
+
+
+
+
+
+.page-content__header__cart-window__product-list__cart-product {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.page-content__header__cart-window__product-list__cart-product__image {
+    width: 40px;
+    height: 40px;
+}
+
+.page-content__header__cart-window__product-list__cart-product__text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-content__header__cart-window__product-list__cart-product__text-container__title, .page-content__header__cart-window__product-list__cart-product__text-container__price {
+    font-size: 16px;
+}
+
+.page-content__header__cart-window__product-list__cart-product__text-container__price {
+    color: crimson;
+}
+
+
+.page-content__header__cart-window__product-list__cart-product__text-container__remove-button {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+
+
+
