@@ -1,6 +1,12 @@
+import { Toolbox } from '../tools/toolbox.js';
+import { Product } from '../product/product.js';
+
 export class ProductInserter {
-    constructor() {
+    constructor(productsDiv, cartManager) {
+        this._productsDiv = productsDiv;
         this._controls = document.querySelector('.page-content__body__product-list__element__controls');
+        this._cartManager = cartManager;
+        this._toolbox = new Toolbox();
     }
 
     insertAll() {
@@ -11,37 +17,30 @@ export class ProductInserter {
     }
 
     insertProduct(prod) {
-        let prodsDiv = document.querySelector('.page-content__body__product-list');
+        let productDiv = this._toolbox.createDiv(Product.ELEMENT);
 
-        let productDiv = document.createElement('div');
-        productDiv.className = 'page-content__body__product-list__element';
+        // creating element sub-elements with product contents;
+        let productImg = this._toolbox.createImg(Product.ELEMENT_PICTURE, prod.imgRelPath);
+        let productTitle = this._toolbox.createParagraph(Product.ELEMENT_TITLE, prod.title);
+        let productPrice = this._toolbox.createParagraph(Product.ELEMENT_PRICE, prod.price);
+        let productBonus = this._toolbox.createParagraph(Product.ELEMENT_BONUS, prod.bonus);
 
-        let productImg = document.createElement('img');
-        productImg.className = 'page-content__body__product-list__element__picture';
-        productImg.src = prod.imgRelPath;
-
-        let productTitle = document.createElement('p');
-        productTitle.className = 'page-content__body__product-list__element__title';
-        productTitle.innerText = prod.title;
-
-        let productPrice = document.createElement('p');
-        productPrice.className = 'page-content__body__product-list__element__price';
-        productPrice.innerText = prod.price;
-
-        let productBonus = document.createElement('p');
-        productBonus.className = 'page-content__body__product-list__element__bonus';
-        productBonus.innerText = prod.bonus;
-
-        let productControls = document.createElement('div');
+        // creating controls and adding 'onclick' event;
+        let productControls = this._toolbox._createElementOfClass('div');
         productControls.innerHTML = this._controls.innerHTML;
+        productControls.children[0].addEventListener('click', () => {
+            this._cartManager.addProduct(prod);
+        });
 
+        // appending sub-elements;
         productDiv.appendChild(productImg);
         productDiv.appendChild(productTitle);
         productDiv.appendChild(productPrice);
         productDiv.appendChild(productBonus);
         productDiv.appendChild(productControls);
 
-        prodsDiv.appendChild(productDiv);
+        // appending the new element itself;
+        this._productsDiv.appendChild(productDiv);
     }
 
     _getNewProductSlot() {
