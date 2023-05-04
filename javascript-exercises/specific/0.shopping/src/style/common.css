@@ -10,10 +10,10 @@ html {
 
 .page-content {
     width: 1905;
-    height: 1080;
+    height: 2080;
     background-color: rgb(240,240,240);
 }
 
 p {
-    margin: 4px;
+    margin: 6px;
 }

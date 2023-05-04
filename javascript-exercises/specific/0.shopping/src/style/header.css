@@ -1,5 +1,6 @@
 .page-content__header {
     position: sticky;
+    top: 0;
     margin: 0 auto;
     width: 100%;
 }
@@ -43,4 +44,20 @@
     height: 144px;
 
     background-image: url('/resources/logo.svg');
+}
+
+
+.page-content__header__cart-window {
+    position: absolute;
+    right: 100px;
+    top: 120px;
+
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+
+    background-color: white;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+    visibility: hidden;
 }
