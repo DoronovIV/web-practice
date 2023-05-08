@@ -2,7 +2,20 @@ const toolbox = {};
 toolbox.CreateDiv = createDiv;
 toolbox.CreateParagraph = createParagraph;
 toolbox.CreateImg = createImg;
-toolbox._createElementOfClass = _createElementOfClass;
+toolbox.CreateElementOfClass = _createElementOfClass;
+
+class Product {
+    constructor(title, imgSrc, price, id) {
+        this.title = title;
+        this.imgSrc = imgSrc;
+        this.price = price;
+        this.id = id;
+    }
+}
+
+const prodd = new Product('I h8 brit kb', null, '400', 2020);
+let products = document.querySelector('.goods');
+products.appendChild(getProductMarkup(prodd));
 
 // references queries;
 const mainButtonList = document.querySelectorAll('.btn');
@@ -73,7 +86,9 @@ function SetCartTotal() {
     }
 }
 
-function fillProductList() {
+function fillProductList() {}
+
+function getProductMarkup(prod) {
     // <div class="product">
     //     <h3 class="product__title">Product 1</h3>
     //     <div class="product__body">
@@ -86,8 +101,38 @@ function fillProductList() {
     //         </button>
     //     </div>
     // </div>;
-}
 
+    let product = toolbox.CreateDiv('product');
+    // div
+    let productTitle = toolbox.CreateElementOfClass('h3', 'product__title');
+    productTitle.innerText = prod.title;
+
+    let productBody = toolbox.CreateDiv('product__body');
+    //    div
+    let productBodyImage = toolbox.CreateImg('product__image product__image--small product__image--blur', prod.imgSrc);
+    let productBodySpan = toolbox.CreateElementOfClass('span', 'product__price');
+    productBodySpan.innerText = prod.price;
+    //    end of div
+
+    let productActions = toolbox.CreateDiv('product__actions');
+    //    div
+    let btn = toolbox.CreateElementOfClass('button', 'btn');
+    btn['data-product-id'] = prod.id;
+    btn.innerText = 'Add to cart';
+    //    end of div
+    // end of div
+
+    productActions.appendChild(btn);
+
+    productBody.appendChild(productBodyImage);
+    productBody.appendChild(productBodySpan);
+
+    product.appendChild(productTitle);
+    product.appendChild(productBody);
+    product.appendChild(productActions);
+
+    return product;
+}
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function _createElementOfClass(elementName, className) {
@@ -97,19 +142,19 @@ function _createElementOfClass(elementName, className) {
 }
 
 function createImg(className, src) {
-    let res = this._createElementOfClass('img', className);
+    let res = _createElementOfClass('img', className);
     res.alt = 'Image not found';
     res.src = src;
     return res;
 }
 
 function createDiv(className) {
-    let res = this._createElementOfClass('div', className);
+    let res = _createElementOfClass('div', className);
     return res;
 }
 
 function createParagraph(className, innerText) {
-    let res = this._createElementOfClass('p', className);
+    let res = _createElementOfClass('p', className);
     res.innerText = innerText;
     return res;
 }
