@@ -1,8 +1,16 @@
+const toolbox = {};
+toolbox.CreateDiv = createDiv;
+toolbox.CreateParagraph = createParagraph;
+toolbox.CreateImg = createImg;
+toolbox._createElementOfClass = _createElementOfClass;
+
+// references queries;
 const mainButtonList = document.querySelectorAll('.btn');
 const cartElementRef = document.querySelector('.cart__total');
 const cartPriceElementRef = document.querySelector('.cart__price');
 const cart = [];
 
+// the main loop;
 mainButtonList.forEach(function (button) {
     button.dataset.added = 'false';
 
@@ -24,6 +32,7 @@ mainButtonList.forEach(function (button) {
     });
 });
 
+// function site;
 function AddProduct(id) {
     const price = +this.closest('.product')?.querySelector('.product__price')?.textContent;
     const title = this.closest('.product')?.querySelector('.product__title')?.textContent;
@@ -62,4 +71,45 @@ function SetCartTotal() {
 
         cartPriceElementRef.textContent = total.toFixed(2);
     }
+}
+
+function fillProductList() {
+    // <div class="product">
+    //     <h3 class="product__title">Product 1</h3>
+    //     <div class="product__body">
+    //         <img class="product__image product__image--small product__image--blur" src="" alt="Image not found" />
+    //         <span class="product__price">50000</span>
+    //     </div>
+    //     <div class="product__actions">
+    //         <button class="btn" data-product-id="1010">
+    //             Add to cart
+    //         </button>
+    //     </div>
+    // </div>;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function _createElementOfClass(elementName, className) {
+    let res = document.createElement(elementName);
+    res.className = className ?? null;
+    return res;
+}
+
+function createImg(className, src) {
+    let res = this._createElementOfClass('img', className);
+    res.alt = 'Image not found';
+    res.src = src;
+    return res;
+}
+
+function createDiv(className) {
+    let res = this._createElementOfClass('div', className);
+    return res;
+}
+
+function createParagraph(className, innerText) {
+    let res = this._createElementOfClass('p', className);
+    res.innerText = innerText;
+    return res;
 }
