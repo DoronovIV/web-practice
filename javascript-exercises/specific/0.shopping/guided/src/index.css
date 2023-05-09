@@ -41,7 +41,6 @@
     font-size: 12px;
     border-radius: 50%;
     box-sizing: border-box;
-    
 }
 
 .goods__filter {}
@@ -74,9 +73,26 @@
 
 .product__image {}
 
-.product__actions {}
+.product__actions, .product__quantity {
+    display: flex;
+    justify-content: flex-start;      
+}
 
-.btn {
+.product__actions {
+    gap: 30px;
+}
+
+.product__quantity {
+    gap: 14px;
+    align-items: center;
+    visibility: hidden;
+}
+
+.quantity-value {
+
+}
+
+.btn, .btn-quantity-decrease, .btn-quantity-increase {
     border: none;
     padding: 10px;
     border-radius: 6px;

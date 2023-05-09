@@ -5,15 +5,16 @@ toolbox.CreateImg = createImg;
 toolbox.CreateElementOfClass = _createElementOfClass;
 
 class Product {
-    constructor(title, imgSrc, price, id) {
+    constructor(title, imgSrc, price, id, quantity) {
         this.title = title;
         this.imgSrc = imgSrc;
         this.price = price;
         this.id = id;
+        this.quantity = quantity;
     }
 }
 
-const prodd = new Product('I h8 brit kb', null, '400', 2020);
+const prodd = new Product('I h8 brit kb', null, '400', 2020, 1);
 let products = document.querySelector('.goods');
 products.appendChild(getProductMarkup(prodd));
 
@@ -22,6 +23,9 @@ const mainButtonList = document.querySelectorAll('.btn');
 const cartElementRef = document.querySelector('.cart__total');
 const cartPriceElementRef = document.querySelector('.cart__price');
 const cart = [];
+
+const decreaseButtonList = document.querySelector('btn-quantity-decrease');
+const increaseButtonList = document.querySelector('btn-quantity-increase');
 
 // the main loop;
 mainButtonList.forEach(function (button) {
@@ -34,6 +38,7 @@ mainButtonList.forEach(function (button) {
             this.textContent = 'Remove from cart';
 
             AddProduct.call(this, id);
+            showQuantityControls.call(this, id);
         } else {
             this.textContent = 'Add to cart';
             RemoveProduct.call(this, id);
@@ -43,6 +48,11 @@ mainButtonList.forEach(function (button) {
 
         SetCartTotal();
     });
+});
+
+// quantity control;
+increaseButtonList.forEach(function (button) {
+    button.addEventListener('click', function () {});
 });
 
 // function site;
@@ -89,19 +99,6 @@ function SetCartTotal() {
 function fillProductList() {}
 
 function getProductMarkup(prod) {
-    // <div class="product">
-    //     <h3 class="product__title">Product 1</h3>
-    //     <div class="product__body">
-    //         <img class="product__image product__image--small product__image--blur" src="" alt="Image not found" />
-    //         <span class="product__price">50000</span>
-    //     </div>
-    //     <div class="product__actions">
-    //         <button class="btn" data-product-id="1010">
-    //             Add to cart
-    //         </button>
-    //     </div>
-    // </div>;
-
     let product = toolbox.CreateDiv('product');
     // div
     let productTitle = toolbox.CreateElementOfClass('h3', 'product__title');
@@ -133,6 +130,12 @@ function getProductMarkup(prod) {
 
     return product;
 }
+
+function showQuantityControls(id) {
+    const productDiv = this.closest('.product')?.querySelector('.product__quantity');
+    productDiv.style.visibility = 'visible';
+}
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function _createElementOfClass(elementName, className) {
