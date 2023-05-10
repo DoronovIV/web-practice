@@ -2,6 +2,7 @@ const toolbox = {};
 toolbox.CreateDiv = createDiv;
 toolbox.CreateParagraph = createParagraph;
 toolbox.CreateImg = createImg;
+toolbox.CreateButton = createButton;
 toolbox.CreateElementOfClass = _createElementOfClass;
 
 class Product {
@@ -24,8 +25,8 @@ const cartElementRef = document.querySelector('.cart__total');
 const cartPriceElementRef = document.querySelector('.cart__price');
 const cart = [];
 
-const decreaseButtonList = document.querySelector('btn-quantity-decrease');
-const increaseButtonList = document.querySelector('btn-quantity-increase');
+const decreaseButtonList = document.querySelectorAll('.btn-quantity-decrease');
+const increaseButtonList = document.querySelectorAll('.btn-quantity-increase');
 
 // the main loop;
 mainButtonList.forEach(function (button) {
@@ -42,6 +43,7 @@ mainButtonList.forEach(function (button) {
         } else {
             this.textContent = 'Add to cart';
             RemoveProduct.call(this, id);
+            hideQuantityControls.call(this, id);
         }
 
         this.classList.toggle('btn--primary');
@@ -52,34 +54,47 @@ mainButtonList.forEach(function (button) {
 
 // quantity control;
 increaseButtonList.forEach(function (button) {
-    button.addEventListener('click', function () {});
+    const id = button.closest('.product')?.querySelector('.btn').dataset.productId;
+    const quantityValue = button.closest('.product')?.querySelector('.quantity-value');
+    button.addEventListener('click', function () {
+        AddProduct.call(this, id);
+        quantityValue.innerText = +quantityValue.innerText + 1;
+        SetCartTotal();
+    });
 });
 
 // function site;
 function AddProduct(id) {
     const price = +this.closest('.product')?.querySelector('.product__price')?.textContent;
     const title = this.closest('.product')?.querySelector('.product__title')?.textContent;
-    const checkItem = cart.find((item) => item.id === id);
+    const isAlreadyPresent = cart.find((item) => item.id === id);
 
     const item = {
         id,
         title,
         price,
-        amount: !checkItem ? 1 : checkItem.amount + 1
+        quantity: !isAlreadyPresent ? 1 : isAlreadyPresent.quantity + 1
     };
 
-    cart.push(item);
+    if (!isAlreadyPresent) {
+        cart.push(item);
+    } else {
+        isAlreadyPresent.quantity += 1;
+    }
 }
 
 function RemoveProduct(id) {
     this.textContent = 'Add to cart';
-
+    const quantityValue = this.closest('.product')?.querySelector('.quantity-value');
     const checkItemIndex = cart.findIndex((item) => item.id === id);
 
     if (checkItemIndex !== -1) {
         cart.splice(checkItemIndex, 1);
+        quantityValue.innerText = '1';
     }
 }
+
+function decreaseProduct(id) {}
 
 function SetCartTotal() {
     if (cartElementRef) {
@@ -89,7 +104,7 @@ function SetCartTotal() {
     if (cartPriceElementRef) {
         const total = cart.reduce((acc, current) => {
             // return acc + current.price;
-            return acc + current.price * current.amount;
+            return acc + current.price * current.quantity;
         }, 0);
 
         cartPriceElementRef.textContent = total.toFixed(2);
@@ -116,10 +131,22 @@ function getProductMarkup(prod) {
     let btn = toolbox.CreateElementOfClass('button', 'btn');
     btn['data-product-id'] = prod.id;
     btn.innerText = 'Add to cart';
+
+    //       div
+    let productQuantity = toolbox.CreateDiv('product__quantity');
+    let minusButton = toolbox.CreateButton('btn-quantity-decrease', '-');
+    let quantityParagraph = toolbox.CreateParagraph('quantity-value', '1');
+    let plusButton = toolbox.CreateButton('btn-quantity-increase', '+');
+
+    productQuantity.appendChild(minusButton);
+    productQuantity.appendChild(quantityParagraph);
+    productQuantity.appendChild(plusButton);
+    //       end of div
     //    end of div
     // end of div
 
     productActions.appendChild(btn);
+    productActions.appendChild(productQuantity);
 
     productBody.appendChild(productBodyImage);
     productBody.appendChild(productBodySpan);
@@ -136,6 +163,12 @@ function showQuantityControls(id) {
     productDiv.style.visibility = 'visible';
 }
 
+function hideQuantityControls(id) {
+    const productDiv = this.closest('.product')?.querySelector('.product__quantity');
+    productDiv.style.visibility = 'hidden';
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function _createElementOfClass(elementName, className) {
@@ -159,5 +192,11 @@ function createDiv(className) {
 function createParagraph(className, innerText) {
     let res = _createElementOfClass('p', className);
     res.innerText = innerText;
+    return res;
+}
+
+function createButton(className, innerText) {
+    let res = _createElementOfClass('button', className);
+    res.innerText = innerText ?? 'NULL';
     return res;
 }
