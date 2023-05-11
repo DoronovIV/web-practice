@@ -4,6 +4,8 @@ toolbox.CreateParagraph = createParagraph;
 toolbox.CreateImg = createImg;
 toolbox.CreateButton = createButton;
 toolbox.CreateElementOfClass = _createElementOfClass;
+toolbox.ToNumberWithCommas = toNumberWithCommas;
+const CURRENCY = '$';
 
 class Product {
     constructor(title, imgSrc, price, id, quantity) {
@@ -15,9 +17,7 @@ class Product {
     }
 }
 
-const prodd = new Product('I h8 brit kb', null, '400', 2020, 1);
-let products = document.querySelector('.goods');
-products.appendChild(getProductMarkup(prodd));
+fillProductList();
 
 // references queries;
 const mainButtonList = document.querySelectorAll('.btn');
@@ -71,7 +71,7 @@ decreaseButtonList.forEach(function (button) {
         decreaseProduct.call(this, id);
         quantityValue.innerText = +quantityValue.innerText - 1;
         if (+quantityValue.innerText <= 0) {
-            RemoveProduct.call(this, id);
+            RemoveProduct.call(btn, id);
             hideQuantityControls.call(this, id);
             btn.classList.toggle('btn--primary');
             btn.innerHTML = 'Add to cart';
@@ -134,7 +134,51 @@ function decreaseProduct(id) {
     }
 }
 
-function fillProductList() {}
+function fillProductList() {
+    let productList = [
+        {
+            id: 0,
+            imgRelPath: '../resources/phone.jfif',
+            title: 'SomePhone 44 Pro',
+            price: '99999',
+            bonus: '+300 бонусов'
+        },
+        {
+            id: 1,
+            imgRelPath: '../resources/fridge.jfif',
+            title: 'SomeFridge 500',
+            price: ' 89999',
+            bonus: '+300 бонусов'
+        },
+        {
+            id: 2,
+            imgRelPath: '../resources/tv.jfif',
+            title: 'SomeTV 2',
+            price: ' 69999',
+            bonus: '+300 бонусов'
+        },
+        {
+            id: 3,
+            imgRelPath: '../resources/washing.png',
+            title: 'Washer 290',
+            price: ' 79999',
+            bonus: '+300 бонусов'
+        },
+        {
+            id: 4,
+            imgRelPath: '../resources/laptop.png',
+            title: 'Backard Pell 15',
+            price: ' 59999',
+            bonus: '+300 бонусов'
+        }
+    ];
+
+    productList.forEach((element) => {
+        let mark = getProductMarkup(element);
+        let products = document.querySelector('.goods');
+        products.appendChild(mark);
+    });
+}
 
 function getProductMarkup(prod) {
     let product = toolbox.CreateDiv('product');
@@ -144,9 +188,9 @@ function getProductMarkup(prod) {
 
     let productBody = toolbox.CreateDiv('product__body');
     //    div
-    let productBodyImage = toolbox.CreateImg('product__image product__image--small product__image--blur', prod.imgSrc);
+    let productBodyImage = toolbox.CreateImg('product__image product__image--small product__image--blur', prod.imgRelPath);
     let productBodySpan = toolbox.CreateElementOfClass('span', 'product__price');
-    productBodySpan.innerText = prod.price;
+    productBodySpan.innerText = toolbox.ToNumberWithCommas(prod.price) + ' ' + CURRENCY;
     //    end of div
 
     let productActions = toolbox.CreateDiv('product__actions');
@@ -222,4 +266,8 @@ function createButton(className, innerText) {
     let res = _createElementOfClass('button', className);
     res.innerText = innerText ?? 'NULL';
     return res;
+}
+
+function toNumberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 }

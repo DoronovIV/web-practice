@@ -1,3 +1,7 @@
+* {
+    font-family: Arial, sans serif;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -71,7 +75,10 @@
     margin-top: 10px;
 }
 
-.product__image {}
+.product__image {
+    width: 200px;
+    height: 200px;
+}
 
 .product__actions, .product__quantity {
     display: flex;
@@ -89,7 +96,7 @@
 }
 
 .quantity-value {
-
+    
 }
 
 .btn, .btn-quantity-decrease, .btn-quantity-increase {
@@ -99,7 +106,9 @@
     margin-top: 10px;
     cursor: pointer;
     user-select: none;
-    
+}
+
+.btn {
     transition: 0.2s ease-out;
 }
 
