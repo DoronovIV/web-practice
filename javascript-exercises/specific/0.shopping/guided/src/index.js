@@ -5,6 +5,7 @@ toolbox.CreateImg = createImg;
 toolbox.CreateButton = createButton;
 toolbox.CreateElementOfClass = _createElementOfClass;
 toolbox.ToNumberWithCommas = toNumberWithCommas;
+toolbox.BackToNumber = backToNumber;
 const CURRENCY = '$';
 
 class Product {
@@ -82,7 +83,7 @@ decreaseButtonList.forEach(function (button) {
 
 // function site;
 function AddProduct(id) {
-    const price = +this.closest('.product')?.querySelector('.product__price')?.textContent;
+    const price = toolbox.BackToNumber(this.closest('.product')?.querySelector('.product__price')?.textContent);
     const title = this.closest('.product')?.querySelector('.product__title')?.textContent;
     const isAlreadyPresent = cart.find((item) => item.id === id);
 
@@ -118,7 +119,6 @@ function SetCartTotal() {
 
     if (cartPriceElementRef) {
         const total = cart.reduce((acc, current) => {
-            // return acc + current.price;
             return acc + current.price * current.quantity;
         }, 0);
 
@@ -140,35 +140,35 @@ function fillProductList() {
             id: 0,
             imgRelPath: '../resources/phone.jfif',
             title: 'SomePhone 44 Pro',
-            price: '99999',
+            price: 99999,
             bonus: '+300 бонусов'
         },
         {
             id: 1,
             imgRelPath: '../resources/fridge.jfif',
             title: 'SomeFridge 500',
-            price: ' 89999',
+            price: 89999,
             bonus: '+300 бонусов'
         },
         {
             id: 2,
             imgRelPath: '../resources/tv.jfif',
             title: 'SomeTV 2',
-            price: ' 69999',
+            price: 69999,
             bonus: '+300 бонусов'
         },
         {
             id: 3,
             imgRelPath: '../resources/washing.png',
             title: 'Washer 290',
-            price: ' 79999',
+            price: 79999,
             bonus: '+300 бонусов'
         },
         {
             id: 4,
             imgRelPath: '../resources/laptop.png',
             title: 'Backard Pell 15',
-            price: ' 59999',
+            price: 59999,
             bonus: '+300 бонусов'
         }
     ];
@@ -268,6 +268,11 @@ function createButton(className, innerText) {
     return res;
 }
 
-function toNumberWithCommas(x) {
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+function toNumberWithCommas(nNumber) {
+    return nNumber.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+}
+
+function backToNumber(sNumber) {
+    let res = sNumber.replace(/\ /g, '');
+    return parseInt(res);
 }
