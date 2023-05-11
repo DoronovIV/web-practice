@@ -1,3 +1,11 @@
+/*
+
+    TODO: 
+
+        - ask Alexei about the 'data-product-id' property creation;
+
+*/
+
 const toolbox = {};
 toolbox.CreateDiv = createDiv;
 toolbox.CreateParagraph = createParagraph;
@@ -58,6 +66,7 @@ increaseButtonList.forEach(function (button) {
     const id = button.closest('.product')?.querySelector('.btn').dataset.productId;
     const quantityValue = button.closest('.product')?.querySelector('.quantity-value');
     button.addEventListener('click', function () {
+        console.log(id);
         AddProduct.call(this, id);
         quantityValue.innerText = +quantityValue.innerText + 1;
         SetCartTotal();
@@ -93,15 +102,19 @@ function AddProduct(id) {
         price,
         quantity: !isAlreadyPresent ? 1 : isAlreadyPresent.quantity + 1
     };
+    console.log(isAlreadyPresent);
 
     if (!isAlreadyPresent) {
         cart.push(item);
+        console.log(cart);
     } else {
         isAlreadyPresent.quantity += 1;
     }
 }
 
 function RemoveProduct(id) {
+    console.log(cart);
+
     this.textContent = 'Add to cart';
     const quantityValue = this.closest('.product')?.querySelector('.quantity-value');
     const checkItemIndex = cart.findIndex((item) => item.id === id);
@@ -110,6 +123,8 @@ function RemoveProduct(id) {
         cart.splice(checkItemIndex, 1);
         quantityValue.innerText = '1';
     }
+
+    console.log(cart);
 }
 
 function SetCartTotal() {
