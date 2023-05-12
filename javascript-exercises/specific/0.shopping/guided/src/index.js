@@ -211,7 +211,7 @@ function getProductMarkup(prod) {
     let productActions = toolbox.CreateDiv('product__actions');
     //    div
     let btn = toolbox.CreateElementOfClass('button', 'btn');
-    btn['data-product-id'] = prod.id;
+    btn.dataset.productId = prod.id;
     btn.innerText = 'Add to cart';
 
     //       div
