@@ -1,0 +1,1 @@
+(()=>{const o=new Post("Sample Text","Hello World!");console.log(o.toString())})();
