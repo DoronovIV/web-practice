@@ -4,16 +4,23 @@ import {
   CheckQuantityValue,
   RemoveProduct,
   SetCartTotal,
+  setLocalStorageProductList,
+  checkLocalStorageProduct,
 } from './functions';
 import Product from './product';
 import './index.css';
+
+export let products = null;
+
+export const localProductsKey = 'products';
+setLocalStorageProductList([]);
 
 const loader = document.querySelector('.loader');
 loader.classList.add('loader--enabled');
 loader.classList.remove('loader--disabled');
 
 setTimeout(() => {
-  const products = [
+  products = [
     new Product('item1', 'Pixel 7 8/128 LEMONGRASS', 51000, './img/PIXEL 7 8_128 lemongrass.png'),
     new Product('item2', 'PIXEL 7 8/128 SNOW', 50500, './img/PIXEL 7 8_128 Snow.png'),
     new Product(
@@ -68,7 +75,13 @@ function InitProducts(products) {
   products.forEach((product) => {
     const productElement = GetProductElement(product);
 
-    productsContainer.appendChild(productElement);
+    let exists = checkLocalStorageProduct(product);
+
+    if (exists) {
+      productsContainer.appendChild(GetProductElement(exists));
+    } else {
+      productsContainer.appendChild(productElement);
+    }
   });
 }
 
