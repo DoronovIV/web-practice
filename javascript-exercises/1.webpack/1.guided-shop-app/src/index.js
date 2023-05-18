@@ -6,18 +6,30 @@ import {
   SetCartTotal,
   setLocalStorageProductList,
   checkLocalStorageProduct,
+  getSessionStorageProductList,
+  setSessionStorageProductList,
+  cart,
 } from './functions';
 import Product from './product';
 import './index.css';
 
 export let products = null;
 
-export const localProductsKey = 'products';
-setLocalStorageProductList([]);
+export const productsKey = 'products';
+// setLocalStorageProductList([]);
+// setSessionStorageProductList([]);
 
 const loader = document.querySelector('.loader');
 loader.classList.add('loader--enabled');
 loader.classList.remove('loader--disabled');
+
+let list = getSessionStorageProductList();
+for (let prod of list) {
+  let productMarkup = GetProductElement(prod);
+  let id = productMarkup.querySelector('.btn').dataset.productId;
+  AddProduct.call(productMarkup.querySelector('.btn'), id);
+}
+SetCartTotal();
 
 setTimeout(() => {
   products = [
@@ -91,7 +103,7 @@ function InitProducts(products) {
  * @returns {HTMLDivElement}
  */
 function GetProductElement(product) {
-  const { id, price, img, imgAlt, title } = product;
+  const { id, price, img, imgAlt, title, quantity } = product;
 
   const productContainer = document.createElement('div');
   productContainer.classList.add('product');
@@ -108,9 +120,8 @@ function GetProductElement(product) {
   const productAddToCartButton = document.createElement('button');
   const productQuantityInput = document.createElement('input');
 
-  productAddToCartButton.textContent = 'Add to cart';
   productAddToCartButton.dataset.productId = id;
-  productQuantityInput.value = 1;
+  productQuantityInput.value = quantity;
 
   productImage.classList.add('product__image');
   productImage.src = img;
@@ -121,7 +132,14 @@ function GetProductElement(product) {
   productBody.classList.add('product__body');
   productImageWrapper.classList.add('product__image-wrapper');
   productActions.classList.add('product__actions');
+
   productAddToCartButton.classList.add('btn');
+  productAddToCartButton.textContent = 'Add to cart';
+  if (cart.find((p) => p.id === product.id)) {
+    productAddToCartButton.classList.add('btn--primary');
+    productAddToCartButton.textContent = 'Remove from cart';
+  }
+
   productQuantityInput.classList.add('quantity');
 
   productActions.appendChild(productAddToCartButton);

@@ -15,6 +15,7 @@ export default class Product {
     this.price = price;
     this.img = img;
     this.imgAlt = title;
+    this.quantity = 1;
   }
 }
 

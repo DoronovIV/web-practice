@@ -1,11 +1,11 @@
-import { localProductsKey } from './index.js';
+import { productsKey } from './index.js';
 
 export const cart = [];
 
 export function AddProduct(id) {
   const price = +this.closest('.product')?.querySelector('.product__price')?.textContent;
   const title = this.closest('.product')?.querySelector('.product__title')?.textContent;
-  const img = this.closest('product')?.querySelector('.product__image')?.src;
+  const img = this.closest('.product')?.querySelector('.product__image')?.src;
   const quantity = Number(this.nextElementSibling.value);
 
   const item = {
@@ -17,6 +17,7 @@ export function AddProduct(id) {
   };
 
   addProductToLocalStorage(item);
+  addProductToSessionStorage(item);
   cart.push(item);
 }
 
@@ -66,31 +67,63 @@ export function CheckProduct(id) {
 }
 
 export function getLocalStorageProductList() {
-  return JSON.parse(localStorage.getItem('lsQuantityKey'));
+  return JSON.parse(localStorage.getItem(productsKey));
+}
+
+export function getSessionStorageProductList() {
+  return JSON.parse(sessionStorage.getItem(productsKey));
 }
 
 export function setLocalStorageProductList(list) {
-  localStorage.setItem(localProductsKey, list);
+  localStorage.setItem(productsKey, JSON.stringify(list));
+}
+
+export function setSessionStorageProductList(list) {
+  sessionStorage.setItem(productsKey, JSON.stringify(list));
 }
 
 export function checkLocalStorageProduct(product) {
-  debugger;
   const list = getLocalStorageProductList();
-  return list.find((p) => p.id === product.id);
+  if (list.length > 0) {
+    return list.find((p) => p.id === product.id);
+  }
+  return null;
+}
+
+export function checkSessionStorageProduct(product) {
+  const list = getSessionStorageProductList();
+  if (list.length > 0) {
+    return list.find((p) => p.id === product.id);
+  }
+  return null;
 }
 
 export function addProductToLocalStorage(product) {
   let list = getLocalStorageProductList();
 
-  const existingItemIndex = list.findIndex((p) => p.id === product.id);
+  let existingItem = checkLocalStorageProduct(product);
 
-  if (-1 > existingItemIndex) {
-    list[existingItemIndex] = product;
+  if (existingItem) {
+    existingItem = product;
   } else {
     list.push(product);
   }
 
   setLocalStorageProductList(list);
+}
+
+export function addProductToSessionStorage(product) {
+  let list = getSessionStorageProductList();
+
+  let existingItem = checkSessionStorageProduct(product);
+
+  if (existingItem) {
+    existingItem = product;
+  } else {
+    list.push(product);
+  }
+
+  setSessionStorageProductList(list);
 }
 
 export function fromMarkupToObject(productMarkup) {
